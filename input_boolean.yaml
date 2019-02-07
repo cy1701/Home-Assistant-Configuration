@@ -1,0 +1,6 @@
+  enable_movie_time:
+    name: Movie Time
+    initial: off
+  enable_office_movie_time:
+    name: Office Movie Time
+    initial: off    

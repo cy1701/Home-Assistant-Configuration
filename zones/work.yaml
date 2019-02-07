@@ -1,0 +1,6 @@
+name: Work
+latitude: !secret work_lat
+longitude: !secret work_lon
+radius: 350
+icon: 'mdi:school'
+

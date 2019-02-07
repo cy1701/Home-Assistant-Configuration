@@ -1,0 +1,22 @@
+title: Castle
+icon: mdi:castle
+background: center / cover no-repeat url("/local/backgrounds/background-15.gif") fixed 
+resources:
+  - url: /local/mini-media-player-bundle.js?v=0.9.8
+    type: js
+  - url: /local/canvas-gauge-card.js
+    type: module
+  - url: /local/monster-card.js
+    type: js
+  - url: /local/card-modder.js??v=1
+    type: js
+  - url: /local/card-tools.js?v=6ce5d0
+    type: js
+views:
+
+  - !include lovelace/tabs/rooms.yaml           
+  - !include lovelace/tabs/environment.yaml
+  - !include lovelace/tabs/media.yaml
+  - !include lovelace/tabs/systems-status.yaml
+  - !include lovelace/tabs/experimental.yaml
+  - !include lovelace/tabs/devices.yaml

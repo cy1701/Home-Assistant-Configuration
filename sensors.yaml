@@ -1,0 +1,77 @@
+########################################
+### Mobile Sensors 
+########################################
+#steve
+
+#tammy
+
+
+
+########################################
+### Bluetooth Sensors 
+########################################
+
+- platform: mitemp_bt
+  mac: !secret mitemp1_mac 
+  name: Basement Monitor
+  force_update: false
+  median: 3
+  monitored_conditions:
+      - temperature
+      - humidity
+      - battery
+
+########################################
+### ESP Sensors
+########################################
+
+
+
+
+
+
+- platform: cert_expiry
+  host: !secret http_url
+  port: !secret http_port
+
+- platform: version
+
+
+
+- platform: waqi
+  token: !secret waqi_token
+  locations:
+     - kingsport
+
+
+
+- platform: time_date
+  display_options:
+    - time
+
+
+
+- platform: systemmonitor
+  resources:
+  - type: disk_use_percent
+    arg: /home
+  - type: memory_free
+  - type: disk_free
+    arg: /
+
+
+########################################
+### Online Sensors
+########################################
+
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+########################################
+### Template Sensors
+########################################
+
+

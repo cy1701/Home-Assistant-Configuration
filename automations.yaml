@@ -1,0 +1,131 @@
+- id: '1512786099574'
+  alias: Nightlight Normal
+  trigger:
+  - at: 08:00
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: scene.nightlights_full_mode
+    entity_id: scene.nightlights_full_mode
+    service: scene.turn_on
+- id: '1512786094324'
+  alias: Nightlight on
+  trigger:
+  - at: '21:00'
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: scene.nightlights_active_mode
+    entity_id: scene.nightlights_active_mode
+    service: scene.turn_on
+- id: '1548007943143'
+  alias: Nightlight Off
+  trigger:
+  - at: 08:00:05
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: light.hall_light
+    service: homeassistant.turn_off
+  - data:
+      entity_id: light.kitchen
+    service: homeassistant.turn_off
+- id: '1548008453237'
+  alias: Basement Temperature Below Freezing
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.basement_monitor_temperature
+    below: 32
+  action:
+  - service: tts.google_say
+    data_template:
+      entity_id: media_player.home_group
+      message: Basement is below 32 degrees. Current temperature is {{states('sensor.basement_monitor_temperature')}}
+- id: '1548008453233'
+  alias: Set Radio Volume
+  trigger:
+    platform: state
+    entity_id: input_number.volume_radio
+  action:
+    service: media_player.volume_set
+    data_template:
+      entity_id: '{% if is_state("input_select.chromecast_radio", "Livingroom") %}
+        media_player.living_room_display {% elif is_state("input_select.chromecast_radio",
+        "Shop") %} media_player.shop {% elif is_state("input_select.chromecast_radio",
+        "Bedroom") %} media_player.bedroom_speaker {% elif is_state("input_select.chromecast_radio",
+        "Bathroom") %}  media_player.bathroom_speaker {% elif is_state("input_select.chromecast_radio",
+        "Kitchen") %}  media_player.kitchen_display {% elif is_state("input_select.chromecast_radio",
+        "Office") %}  media_player.office_speaker {% elif is_state("input_select.chromecast_radio",
+        "Everywhere") %} media_player.home_group {% endif %}
+
+        '
+      volume_level: '{{  states.input_number.volume_radio.state  }}'
+- id: '1548557357997'
+  alias: Set Theme
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - data:
+      name: slate
+    service: frontend.set_theme
+- id: '1522592633674'
+  alias: Drop the house lights
+  trigger:
+  - entity_id: media_player.kodi
+    platform: state
+    to: playing
+  condition:
+  - condition: state
+    entity_id: input_boolean.enable_movie_time
+    state: 'on'
+  action:
+  - data:
+      entity_id: scene.movie_time
+    service: scene.turn_on
+- action:
+  - data:
+      entity_id: scene.living_room_full
+    service: scene.turn_on
+  alias: Raise the house lights
+  condition:
+  - condition: state
+    entity_id: input_boolean.enable_movie_time
+    state: 'on'
+  id: '1522593395080'
+  trigger:
+  - entity_id: media_player.kodi
+    from: playing
+    platform: state
+- id: '152253223674'
+  alias: Drop the Office lights
+  trigger:
+  - entity_id: media_player.kodi_office
+    platform: state
+    to: playing
+  condition:
+  - condition: state
+    entity_id: input_boolean.enable_office_movie_time
+    state: 'on'
+  action:
+  - data:
+      entity_id: scene.office_movie_time
+    service: scene.turn_on
+- id: '1322573395080'
+  alias: Raise the Office lights
+  trigger:
+  - entity_id: media_player.kodi_office
+    from: playing
+    platform: state
+  condition:
+  - condition: state
+    entity_id: input_boolean.enable_office_movie_time
+    state: 'on'
+  action:
+  - data:
+      entity_id: scene.office_lights_full
+    service: scene.turn_on

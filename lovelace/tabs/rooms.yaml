@@ -1,0 +1,224 @@
+---
+id: rooms
+title: Rooms
+panel: true
+cards:
+  - type: vertical-stack
+    column_width: calc(100% / 1)
+    cards:
+    - type: horizontal-stack
+      cards:
+
+      - type: custom:card-modder
+        card:
+            type: glance
+            column_width: calc(100% / 3)
+            title: Living Room
+            show_header_toggle: true
+            entities:
+              - entity: light.living_room_end_table
+                tap_action:
+                  action: toggle
+              - entity: light.living_room_accent
+                tap_action:
+                  action: toggle
+              - entity:  light.living_room_ceiling
+                name: Ceiling
+                icon: mdi:ceiling-light
+                tap_action:
+                  action: toggle
+              - entity: light.living_room_chair_table
+                name: Chair
+                tap_action:
+                  action: toggle
+              - entity: switch.fan
+                tap_action:
+                  action: toggle
+              - entity: media_player.living_room_display
+                name: Google Display
+              - entity: media_player.kodi
+                icon: mdi:kodi
+              - entity: media_player.55_tcl_roku_tv
+                name: Roku Tv
+              - entity: input_boolean.enable_movie_time
+                icon: mdi:movie
+                tap_action:
+                  action: toggle
+                
+            
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/mediabg7.png")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden 
+      
+
+
+      - type: custom:card-modder
+        card:
+            type: glance
+            column_width: calc(100% / 3)
+            title: Bedroom
+            entities: 
+            - entity: light.bedroom_ceiling
+              name: Ceiling
+              tap_action:
+                 action: toggle
+            - entity: switch.bedroom_speaker
+            - entity: switch.wemo_switch_1
+              name: Bedroom Fan
+              icon: mdi:fan
+              tap_action:
+                 action: toggle            
+            - entity: media_player.bedroom_speaker
+              name: Clock
+              icon: mdi:clock
+            - entity: sensor.bedroom_sensor_temperature
+              name: Temperature
+            - entity: binary_sensor.bedroom_sensor_occupancy
+              name: Occupancy
+              icon: mdi:run
+
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/mediabg9.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden 
+      
+
+          
+#          - type: vertical-stack
+#            cards:
+    - type: horizontal-stack
+      cards:                
+
+
+          - type: custom:card-modder
+            card:
+                type: glance
+                column_width: calc(100% / 3)
+                title: Office
+                entities:
+                - entity: light.office
+                  name: Ceiling Lights
+                  tap_action:
+                     action: toggle            
+                - entity: switch.wall_monitor
+                  tap_action:
+                     action: toggle
+                - entity: media_player.office_speaker
+                - entity: input_boolean.enable_office_movie_time
+                  icon: mdi:movie
+                  tap_action:
+                    action: toggle
+            style:                 
+              border-radius: 20px
+              background-image: url("/local/backgrounds/mediabg6.png")
+              background-size: cover
+              background-repeat: no-repeat
+              border: solid 1px rgba(100,100,100,0.3)
+              box-shadow: 3px 3px rgba(0,0,0,0.4)
+              overflow: hidden
+
+
+
+          - type: custom:card-modder
+            card:
+
+                type: glance
+                column_width: calc(100% / 3)
+                title: Kitchen
+                entities: 
+                - entity: light.kitchen
+                  tap_action:
+                     action: toggle
+                - entity: media_player.kitchen_display
+            style:                 
+              border-radius: 20px
+              background-image: url("/local/backgrounds/background2.jpg")
+              background-size: cover
+              background-repeat: no-repeat
+              border: solid 1px rgba(100,100,100,0.3)
+              box-shadow: 3px 3px rgba(0,0,0,0.4)
+              overflow: hidden
+
+
+
+    - type: horizontal-stack
+      cards:                
+
+      - type: vertical-stack
+        cards:
+
+          - type: custom:card-modder
+            card:
+                type: glance
+                column_width: calc(100% / 3)
+                title: Hall
+                entities:
+                - entity: light.hallway
+#                  name: Ceiling Lights
+                  tap_action:
+                     action: toggle
+                - entity: sensor.thermostat_temperature
+                  name: Thermostat
+
+            style:                 
+              border-radius: 20px
+              background-image: url("/local/backgrounds/background1.jpg")
+              background-size: cover
+              background-repeat: no-repeat
+              border: solid 1px rgba(100,100,100,0.3)
+              box-shadow: 3px 3px rgba(0,0,0,0.4)
+              overflow: hidden
+
+          - type: custom:card-modder
+            card:
+        
+                type: glance
+                column_width: calc(100% / 3)
+                title: Outdoor Lights
+                entities:
+                - entity: light.sunroom
+#                  name: Ceiling Lights
+                  tap_action:
+                     action: toggle
+                - entity: switch.outdoor_lights_back
+                  name: Backyard
+                  icon: mdi:spotlight-beam
+                  tap_action:
+                     action: toggle
+            style:                 
+              border-radius: 20px
+              background-image: url("/local/backgrounds/maxresdefault.jpg")
+              background-size: cover
+              background-repeat: no-repeat
+              border: solid 1px rgba(100,100,100,0.3)
+              box-shadow: 3px 3px rgba(0,0,0,0.4)
+              overflow: hidden
+                
+      - type: custom:card-modder
+        card:
+            type: entities
+            title:  House Radio
+            entities: 
+                - input_select.radio_station
+                - input_select.chromecast_radio
+                - input_number.volume_radio                    
+                - script.radio538
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/tape.jpg")
+          background-size: 100% 100%
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden                
+
+   

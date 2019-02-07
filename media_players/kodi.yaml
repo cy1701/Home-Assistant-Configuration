@@ -1,0 +1,7 @@
+- platform: kodi
+  host: !secret kodi_ip
+  port: !secret kodi_port
+  name: Kodi
+  username: kodi
+  password: None
+

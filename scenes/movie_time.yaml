@@ -1,0 +1,22 @@
+ - name: 'Movie Time'
+   entities:
+    light.living_room_end_table:
+        state: on
+        transition: 2
+        brightness: 75
+    light.living_room_chair_table:
+        state: on
+        transition: 2
+        brightness: 75
+    light.living_room_ceiling_1:
+        state: on
+        transition: 3
+        brightness: 75
+    light.living_room_ceiling_2:
+        state: on
+        transition: 3
+        brightness: 75
+    light.living_room_accent: 
+        state: on
+        transition: 3
+        brightness: 50

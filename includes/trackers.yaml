@@ -1,0 +1,9 @@
+- platform: netgear
+  host: !secret netgear_ip
+  username: !secret netgear_user
+  password: !secret netgear_pw
+  consider_home: 45
+  track_new_devices: yes
+  interval_seconds: 120
+  
+- platform: bluetooth_le_tracker

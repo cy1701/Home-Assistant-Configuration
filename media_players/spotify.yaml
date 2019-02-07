@@ -1,0 +1,4 @@
+- platform: spotify
+  client_id:  !secret spotify_clicnet_id
+  client_secret: !secret spotify_clicnet_secret 
+

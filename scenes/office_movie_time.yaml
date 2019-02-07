@@ -1,0 +1,10 @@
+ - name: 'Office Movie Time'
+   entities:
+    light.office_ceiling_light_1:
+        state: on
+        transition: 2
+        brightness: 35
+    light.office_ceiling_light_2:
+        state: on
+        transition: 2
+        brightness: 35

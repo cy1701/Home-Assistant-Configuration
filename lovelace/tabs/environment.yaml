@@ -1,0 +1,43 @@
+---
+id: environment
+title: Environment
+cards:
+  - type: weather-forecast
+    title: Weather
+    entity: weather.dark_sky
+#      - type: thermostat
+#        entity: climate.thermostat
+  - type: gauge
+    title: Basement Temperature Sensor
+    entity: sensor.basement_monitor_temperature
+    severity:
+        red: 32
+        green: 40
+        yellow: 38
+  - type: gauge        
+    title: Basement Humidity Sensor
+    entity: sensor.basement_monitor_humidity
+  - type: gauge        
+    title: Basement Sensor Battery
+    entity: sensor.basement_monitor_battery  
+    severity:
+        red: 20
+        green: 40
+        yellow: 30  
+  - type: gauge        
+    title: Bedroom Temperature Sensor
+    entity:  sensor.bedroom_sensor_temperature       
+  - type: gauge        
+    title: Bedroom Temperature Sensor
+    entity: sensor.thermostat_temperature
+
+  - type: iframe
+    aspect_ratio: 90%
+    url: 'https://embed.windy.com/embed2.html?rain,36.337,-82.340,9'
+
+  - type: glance
+    entities:
+    - entity: sensor.waqi_kingsport_tennessee_usa
+    - entity: sun.sun
+    - entity: camera.weather
+  

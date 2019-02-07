@@ -1,0 +1,22 @@
+- platform: group
+  name: Bedroom_Ceiling
+  entities:
+  - light.bedroom_ceiling_1
+  - light.bedroom_ceiling_2
+- platform: group
+  name: Living_Room_Ceiling
+  entities:
+  - light.living_room_ceiling_1
+  - light.living_room_ceiling_2
+  
+#- platform: hue
+#  host: !secret hue_ip
+
+- platform: mqtt
+  name: Tower Light
+  state_topic: tower/light/tower_light/state
+  command_topic: tower/light/tower_light/command
+  availability_topic: tower/status
+  schema: json
+  brightness: true
+  rgb: true

@@ -1,0 +1,6 @@
+- platform: kodi
+  host: !secret kodi_office_ip
+  port: !secret kodi_port
+  name: Kodi Office
+  username: kodi
+  password: None

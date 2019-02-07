@@ -1,0 +1,10 @@
+ - name: 'Nightlights Active Mode'
+   entities:
+    light.hall_light:
+        state: on
+        transition: 1
+        brightness: 20
+    light.kitchen_light:
+        state: on
+        transition: 1
+        brightness: 20

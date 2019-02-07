@@ -1,0 +1,116 @@
+media_player.office:
+  icon: mdi:music-note
+switch.bedroom_pi_music:
+  icon: mdi:radio
+switch.bedroom_speaker:
+  icon: mdi:speaker
+light.living_room_chair_table:
+  friendly_name: Chair table
+  icon: mdi:lamp
+light.living_room_end_table:
+  friendly_name: End table
+  icon: mdi:lamp
+switch.wall_monitor:
+  icon: mdi:monitor
+switch.hypercube_printer:
+  icon: mdi:printer-3d
+sensor.bedroomsensor_temperature:
+  friendly_name: Bedroom Temperature
+switch.fan:
+  icon: mdi:fan
+camera.door_camera:
+  icon: mdi:camcorder
+scene.movie_time:
+  icon: mdi:movie
+  emulated_hue: true
+  emulated_hue_name: movie time
+script.1513442321081:
+  friendly_name: sleep_machine_on
+input_boolean.enable_sleep_in:
+  friendly_name: Have a lie in
+  icon: mdi:hotel
+  emulated_hue: true
+  emulated_hue_name: sleep in
+input_boolean.start_sleep_machine:
+  emulated_hue: true
+  emulated_hue_name: sleep machine
+input_boolean.enable_media_light:
+  emulated_hue: true
+  emulated_hue_name: movie mode
+sensor.dark_sky_apparent_temperature:
+  icon: temperature-fahrenheit
+sensor.dark_sky_humidity:
+  icon: water-percent
+sensor.dark_sky_precip_probability:
+  icon: weather-lightning-rainy
+sensor.yw_day1_condition:
+  friendly_name: Weather Today
+sensor.yw_day1_temperature_max:
+  friendly_name: High Today
+sensor.yw_day1_temperature_min:
+  friendly_name: Low Today
+sensor.yw_day1_temperature:
+  friendly_name: Current Temperature
+sensor.yw_day2_condition:
+  friendly_name: Weather Tomorrow
+sensor.yw_day2_temperature_max:
+  friendly_name: High Tomorrow
+sensor.yw_day2_temperature_min:
+  friendly_name: Low Tomorrow
+sensor.yw_day3_condition:
+  friendly_name: Weather Next Day
+sensor.yw_day3_temperature_max:
+  friendly_name: High Next Day
+sensor.yw_day3_temperature_min:
+  friendly_name: Low Next Day
+device_tracker.pixel_pixel:
+  friendly_name: Steve
+  entity_picture: local/steve_icon.jpg
+device_tracker.pixel:
+  friendly_name: Steve-wifi
+  entity_picture: local/steve_icon.jpg
+sensor.steve_pixel_battery:
+  icon: mdi:battery
+device_tracker.iphone_iphone:
+  friendly_name: Tammy
+  entity_picture: local/tammy.jpg
+sensor.tammy_iphone_battery:
+  icon: mdi:battery
+sun.sun:
+  icon: mdi:weather-sunny
+sensor.weather_humidity:
+  icon: mdi:water-percent
+  friendly_name: Humidity
+sensor.weather_temperature:
+  icon: mdi:thermometer
+  friendly_name: Temperature
+sensor.weather_summary:
+  icon: mdi:leaf
+  friendly_name: Conditions
+group.all_automations:
+  hidden: false
+group.all_switches:
+  hidden: false
+group.all_lights:
+  hidden: false
+scene.movie_pause:
+  hidden: true
+sensor.egg_minder:
+  hidden: true
+sensor.porkfolio_balance:
+  hidden: true
+automation.nightlight_normal:
+  hidden: true
+automation.nightlight_off:
+  hidden: true
+automation.nightlight_on:
+  hidden: true
+automation.reboot_cam_pm:
+  hidden: true
+automation.reboot_cam_am:
+  hidden: true
+light.living_room_accent:
+  friendly_name: Accent
+script.radio538:
+  friendly_name: Start Playing
+  icon: mdi:play

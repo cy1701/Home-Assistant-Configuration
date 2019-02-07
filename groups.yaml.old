@@ -1,0 +1,16 @@
+default_view:
+    view: true
+    icon: mdi:home
+    entities:
+      - group.kitchen
+
+kitchen:
+    name: Kitchen
+    entities:
+      - switch.kitchen_pin_3
+Whole House Radio:
+  name: Whole House Radio
+  entities:
+  - input_select.radio_station
+  - input_select.chromecast_radio
+  - script.radio538

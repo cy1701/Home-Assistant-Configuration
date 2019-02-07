@@ -1,0 +1,10 @@
+ - name: 'Nightlights Full Mode'
+   entities:
+    light.hall_light:
+        state: on
+        transition: 1
+        brightness: 255
+    light.kitchen_light:
+        state: on
+        transition: 1
+        brightness: 255

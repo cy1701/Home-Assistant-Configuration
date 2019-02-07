@@ -1,0 +1,57 @@
+hass_theme:
+   name: HASS Themes
+   options:
+     - default
+     - solarized
+     - PmxMonolight
+     - PmxMononight
+     - wood
+   initial: default
+   icon: mdi:theme-light-dark
+
+media_lockout:
+  name: "Media Automation"
+  options:
+   - "enabled"
+   - "disabled"
+  initial: "disabled"
+radio_station:
+    name: 'Select Radio Station:'
+    options:
+      - MagicRadio by PulsRadio
+      - Q-Music
+      - 3FM
+      - 100% NL
+      - Veronica
+      - Sky Radio
+      - Arrow Classic Rock
+      - Classic FM
+      - BNR Nieuwsradio
+      - SLAM! Hardstyle
+      - Sleep Radio
+      - Ambient Sleeping Pill
+      - Radio Art - Sleep
+      - Ambi Nature Radio
+      - Calm Radio - Sleep
+      - Dinamo.FM Sleep
+      - 10 Hours Rain and Thunder
+      - 8 Hour Deep Sleep Music - Delta Waves
+      - 8 Hour Sleep Hypnosis
+      - 10 Hours Fireplace
+      - 10 Hours Forest Creek
+      - Rain 10 hours of Rain Storm on tin roof
+      - Rain Sounds for Sleeping
+      - Sleep and Relaxation Nature Sounds
+      - Thunderstorm and Rain Sounds over the Ocean
+chromecast_radio:
+    name: 'Select Speakers:'
+    options:
+      - Bathroom
+      - Bedroom
+      - Kitchen
+      - Livingroom
+      - Office
+      - Shop
+      - Everywhere
+    initial: Everywhere
+    icon: mdi:speaker-wireless

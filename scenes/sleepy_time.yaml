@@ -1,0 +1,11 @@
+ - name: 'Sleepy Time'
+   entities:
+    light.bedroom_ceiling_1:
+        state: on
+        transition: 5
+        brightness: 25
+    light.bedroom_ceiling_2:
+        state: on
+        transition: 5
+        brightness: 25
+
