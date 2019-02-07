@@ -15,7 +15,7 @@ Roku Mini|    |   <img src="https://github.com/cy1701/Home-Assistant-Configurati
 
 Screenshots
 
- <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master//config/readme_images/screenshotrooms.png" width="800"/>""|
+ <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master//config/readme_images/screenshot/rooms.png" width="800"/>""
 
 ## DIY
 Floating Crystal Tower   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/tower.jpg" width="200"/>"
