@@ -13,9 +13,9 @@
 |Google Chromcast audio|    |  <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/chromecast%20audio.jpg" width="200"/>""|
 Roku Mini|    |   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/roku.jpg" width="200"/>""|
 
-more to come
+Screenshots
 
-
+ <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master//config/readme_images/screenshotrooms.png" width="800"/>""|
 
 ## DIY
 Floating Crystal Tower   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/tower.jpg" width="200"/>"
