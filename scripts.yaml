@@ -20,21 +20,6 @@
             {% endif %}
            media_content_id: >
             {% if is_state("input_select.radio_station", "MagicRadio by PulsRadio") %} http://193.200.43.23:80/magicradioHD.mp3
-            {% elif is_state("input_select.radio_station", "Q-Music") %} http://icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_96.mp3
-            {% elif is_state("input_select.radio_station", "3FM") %} http://icecast.omroep.nl/3fm-bb-mp3
-            {% elif is_state("input_select.radio_station", "100% NL") %} http://stream.100p.nl/100pctnl.mp3
-            {% elif is_state("input_select.radio_station", "Veronica") %} http://8543.live.streamtheworld.com/VERONICACMP3
-            {% elif is_state("input_select.radio_station", "Sky Radio") %} http://8623.live.streamtheworld.com:80/SKYRADIOAAC_SC
-            {% elif is_state("input_select.radio_station", "Arrow Classic Rock") %} http://91.221.151.155/listen.mp3
-            {% elif is_state("input_select.radio_station", "Classic FM") %} http://19143.live.streamtheworld.com/CLASSICFM_SC
-            {% elif is_state("input_select.radio_station", "BNR Nieuwsradio") %} http://icecast-bnr.cdp.triple-it.nl/bnr_mp3_96_03
-            {% elif is_state("input_select.radio_station", "SLAM! Hardstyle") %} http://vip-icecast.538.lw.triple-it.nl/WEB17_MP3
-            {% elif is_state("input_select.radio_station", "Sleep Radio") %} http://37.59.28.208:8722/stream
-            {% elif is_state("input_select.radio_station", "Ambient Sleeping Pill") %} http://perseus.shoutca.st:8447/h
-            {% elif is_state("input_select.radio_station", "Radio Art - Sleep") %} http://live.radioart.com/fSleep.mp3
-            {% elif is_state("input_select.radio_station", "Ambi Nature Radio") %} http://94.23.252.14:8067/stream
-            {% elif is_state("input_select.radio_station", "Calm Radio - Sleep") %} http://streams.calmradio.com/api/39/128/stream
-            {% elif is_state("input_select.radio_station", "Dinamo.FM Sleep") %} http://channels.dinamo.fm/sleep-aac
             {% elif is_state("input_select.radio_station", "10 Hours Rain and Thunder") %} http://192.168.50.1/shares/USB_Storage/Music/10%20Hours%20Rain%20and%20Thunder%20Healing%20%20Ambient%20%20Sounds%20for%20Deep%20Sleeping%20Meditation%20Relaxation%20Spa.mp4
             {% elif is_state("input_select.radio_station", "8 Hour Deep Sleep Music - Delta Waves") %} http://192.168.50.1/shares/USB_Storage/Music/8%20Hour%20Deep%20Sleep%20Music-%20Delta%20Waves%2c.mp4
             {% elif is_state("input_select.radio_station", "8 Hour Sleep Hypnosis") %} http://192.168.50.1/shares/USB_Storage/Music/8%20Hour%20Sleep%20Hypnosis-%20.mp4
