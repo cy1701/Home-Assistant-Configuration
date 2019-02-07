@@ -8,14 +8,14 @@
 |Raspberry PI III - running hassio|  Element14.com | [ <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/raspberry-pi-3.png" width="200"/>|
 | Wemo mini switches | Amazon.com | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/wemo.png" width="200"/>""|
 |Phillips hue bulbs gen 1 & 2| Best Buy|   |
-|Google Home Hub|   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20hub.jpg" width="200"/>""|
-|Google Mini|    | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20mini.jpg" width="200"/>""|
-|Google Chromcast audio|    |  <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/chromecast%20audio.jpg" width="200"/>""|
+|Google Home Hub|   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20hub.jpg" width="200"/>"|
+|Google Mini|    | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20mini.jpg" width="200"/>"|
+|Google Chromcast audio|    |  <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/chromecast%20audio.jpg" width="200"/>"|
 Roku Mini|    |   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/roku.jpg" width="200"/>""|
 
 Screenshots
 
- <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/screenshot/rooms.png" width="800"/>""
+ <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/screenshots/rooms.png" width="800"/>"
 
 ## DIY
 Floating Crystal Tower   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/tower.jpg" width="200"/>"
