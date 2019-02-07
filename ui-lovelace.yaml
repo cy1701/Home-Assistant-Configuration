@@ -1,5 +1,5 @@
-title: Castle
-icon: mdi:castle
+title: Our House
+icon: mdi:home-city-outline
 background: center / cover no-repeat url("/local/backgrounds/background-15.gif") fixed 
 resources:
   - url: /local/mini-media-player-bundle.js?v=0.9.8
