@@ -11,76 +11,74 @@ cards:
 
 # Kitchen and living room
 
-          - type: custom:card-modder
-            card:
-                 type: custom:mini-media-player
-                 entity: media_player.living_room_display
-                 name: Living Room Display
-                 artwork: cover
-                 show_source: full 
-            style:                 
-              border-radius: 20px
-              background-image: url("/local/backgrounds/background2.jpg")
-              background-size: cover
-              background-repeat: no-repeat
-              border: solid 1px rgba(100,100,100,0.3)
-              box-shadow: 3px 3px rgba(0,0,0,0.4)
-              overflow: hidden
+      - type: custom:card-modder
+        card:
+             type: custom:mini-media-player
+             entity: media_player.living_room_display
+             name: Living Room Display
+             artwork: cover
+             show_source: full 
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
 
-          - type: custom:card-modder
-            card:
-                 type: custom:mini-media-player
-                 entity: media_player.kitchen_display
-                 name: Kitchen Display
-                 artwork: cover
-                 show_source: full 
-            style:                 
-              border-radius: 20px
-              background-image: url("/local/backgrounds/background2.jpg")
-              background-size: cover
-              background-repeat: no-repeat
-              border: solid 1px rgba(100,100,100,0.3)
-              box-shadow: 3px 3px rgba(0,0,0,0.4)
-              overflow: hidden
+      - type: custom:card-modder
+        card:
+             type: custom:mini-media-player
+             entity: media_player.kitchen_display
+             name: Kitchen Display
+             artwork: cover
+             show_source: full 
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
 
     - type: horizontal-stack
       cards:
 
-          - type: custom:card-modder
-            card:
-                 type: custom:mini-media-player
-                 entity: media_player.bathroom_speaker
-                 name: Bathroom Speaker
-                 artwork: cover
-                 show_source: full 
-            style:                 
-              border-radius: 20px
-              background-image: url("/local/backgrounds/background2.jpg")
-              background-size: cover
-              background-repeat: no-repeat
-              border: solid 1px rgba(100,100,100,0.3)
-              box-shadow: 3px 3px rgba(0,0,0,0.4)
-              overflow: hidden
+      - type: custom:card-modder
+        card:
+             type: custom:mini-media-player
+             entity: media_player.bathroom_speaker
+             name: Bathroom Speaker
+             artwork: cover
+             show_source: full 
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
-
-
-          - type: custom:card-modder
-            card:
-                 type: custom:mini-media-player
-                 entity: media_player.bedroom_speaker
-                 name: Bedroom Speaker
-                 artwork: cover
-                 show_source: full 
-            style:                 
-              border-radius: 20px
-              background-image: url("/local/backgrounds/background2.jpg")
-              background-size: cover
-              background-repeat: no-repeat
-              border: solid 1px rgba(100,100,100,0.3)
-              box-shadow: 3px 3px rgba(0,0,0,0.4)
-              overflow: hidden
+      - type: custom:card-modder
+        card:
+             type: custom:mini-media-player
+             entity: media_player.bedroom_speaker
+             name: Bedroom Speaker
+             artwork: cover
+             show_source: full 
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
 
 
@@ -89,84 +87,109 @@ cards:
     - type: horizontal-stack
       cards:              
 
-          - type: custom:card-modder
-            card:
-                 type: custom:mini-media-player
-                 entity: media_player.office_speaker
-                 name: Office Speaker
-                 icon: mdi:radio
-                 artwork: cover
-                 show_source: full 
-            style:                 
-              border-radius: 20px
-              background-image: url("/local/backgrounds/background2.jpg")
-              background-size: cover
-              background-repeat: no-repeat
-              border: solid 1px rgba(100,100,100,0.3)
-              box-shadow: 3px 3px rgba(0,0,0,0.4)
-              overflow: hidden
+      - type: custom:card-modder
+        card:
+             type: custom:mini-media-player
+             entity: media_player.office_speaker
+             name: Office Speaker
+             icon: mdi:radio
+             artwork: cover
+             show_source: full 
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
 
-          - type: custom:card-modder
-            card:
-                 type: custom:mini-media-player
-                 entity: media_player.kodi_office
-                 icon: mdi:kodi
-                 name: Office Kodi
+      - type: custom:card-modder
+        card:
+             type: custom:mini-media-player
+             entity: media_player.kodi_office
+             icon: mdi:kodi
+             name: Office Kodi
 #                 icon: mdi:radio
-                 artwork: cover
-                 show_source: full 
-            style:                 
-              border-radius: 20px
-              background-image: url("/local/backgrounds/background2.jpg")
-              background-size: cover
-              background-repeat: no-repeat
-              border: solid 1px rgba(100,100,100,0.3)
-              box-shadow: 3px 3px rgba(0,0,0,0.4)
-              overflow: hidden
+             artwork: cover
+             show_source: full 
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
 
     - type: horizontal-stack
       cards:              
 
-        - type: custom:mini-media-player
-          entity: media_player.kodi
-          icon: mdi:kodi
-          name: Living Room Kodi
-          artwork: full-cover-fit
-          show_source: full
-          artwork_border: true
-          more_info: true
+      - type: custom:card-modder
+        card:
+            type: custom:mini-media-player
+            entity: media_player.kodi
+            icon: mdi:kodi
+            name: Living Room Kodi
+            artwork: full-cover-fit
+            show_source: full
+            artwork_border: true
+            more_info: true
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
-        - type: custom:mini-media-player
-          entity: media_player.spotify
-          name: Spotify Player
-          artwork: full-cover
-          show_source: full
-          media_list:
-              - name: Sci-fi Swing
-                type: playlist
-                url: spotify:user:mindsikk:playlist:33mZWf0Qg9uayqSXe6nDqs
-              - name: Sci-fi Techno Futuristic
-                type: playlist
-                url: spotify:user:1199376361:playlist:0l8Xua85nftUbAjeEHxEv5
-              - name: Swing / Electro Swing
-                type: playlist
-                url: spotify:user:112890097:playlist:7p0fiWfz6iRlWXvp6hYllq
-              - name: Female Fronted Metal
-                type: playlist
-                url: spotify:user:1121735498:playlist:6VLyqry0Zrr5EdTbKT7SVa
-              - name: Rain Playlistl
-                type: playlist
-                url: spotify:user:firehart95:playlist:0qY4bdtie0JJCMh1JJy8al
-              - name: Nature to Sleep By
-                type: playlist
-                url: spotify:user:mrsolena:playlist:4j6ISnHw98C7f6u98MXBXb
-              - name: Music For Sleep Thunderstorm, Rain â€“ Sounds Of Nature & Rain
-                type: playlist
-                url: spotify:user:12165568231:playlist:7iom8WU2sWHe7HEwd3EvGA
 
-        - type: custom:mini-media-player
+
+      - type: custom:card-modder
+        card:
+              type: custom:mini-media-player
+              entity: media_player.spotify
+              name: Spotify Player
+              artwork: full-cover
+              show_source: full
+              media_list:
+                  - name: Sci-fi Swing
+                    type: playlist
+                    url: spotify:user:mindsikk:playlist:33mZWf0Qg9uayqSXe6nDqs
+                  - name: Sci-fi Techno Futuristic
+                    type: playlist
+                    url: spotify:user:1199376361:playlist:0l8Xua85nftUbAjeEHxEv5
+                  - name: Swing / Electro Swing
+                    type: playlist
+                    url: spotify:user:112890097:playlist:7p0fiWfz6iRlWXvp6hYllq
+                  - name: Female Fronted Metal
+                    type: playlist
+                    url: spotify:user:1121735498:playlist:6VLyqry0Zrr5EdTbKT7SVa
+                  - name: Rain Playlistl
+                    type: playlist
+                    url: spotify:user:firehart95:playlist:0qY4bdtie0JJCMh1JJy8al
+                  - name: Nature to Sleep By
+                    type: playlist
+                    url: spotify:user:mrsolena:playlist:4j6ISnHw98C7f6u98MXBXb
+                  - name: Music For Sleep Thunderstorm, Rain â€“ Sounds Of Nature & Rain
+                    type: playlist
+                    url: spotify:user:12165568231:playlist:7iom8WU2sWHe7HEwd3EvGA
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
+
+
+      - type: custom:card-modder
+        card:
+          type: custom:mini-media-player
           entity: media_player.55_tcl_roku_tv
           name: Roku Tv
           artwork: full-cover
@@ -174,16 +197,40 @@ cards:
           icon: mdi:live_tv
           artwork_border: true
           more_info: true
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
+
+
 
 
 
 
 
     - type: horizontal-stack
-      cards:
-        - type: custom:mini-media-player
-          entity: media_player.home_group
-          icon: mdi:castle
-          artwork_border: true
-          show_source: true
-          show_tts: google
+      cards:              
+
+      - type: custom:card-modder
+        card:
+             type: custom:mini-media-player
+             entity: media_player.home_group
+             icon: mdi:castle
+             artwork_border: true
+             show_source: true
+             show_tts: google
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
+
+
+

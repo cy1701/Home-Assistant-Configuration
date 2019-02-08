@@ -65,9 +65,11 @@ cards:
             entities: 
             - entity: light.bedroom_ceiling
               name: Ceiling
+              icon: mdi:ceiling-light
               tap_action:
                  action: toggle
             - entity: switch.bedroom_speaker
+              name: MPD Speaker
             - entity: switch.wemo_switch_1
               name: Bedroom Fan
               icon: mdi:fan
@@ -80,7 +82,7 @@ cards:
               name: Temperature
             - entity: binary_sensor.bedroom_sensor_occupancy
               name: Occupancy
-              icon: mdi:run
+              icon: mdi:human-handsup
 
         style:                 
           border-radius: 20px
@@ -106,7 +108,8 @@ cards:
                 title: Office
                 entities:
                 - entity: light.office
-                  name: Ceiling Lights
+                  name: Ceiling
+                  icon: mdi:ceiling-light
                   tap_action:
                      action: toggle            
                 - entity: switch.wall_monitor
@@ -136,6 +139,8 @@ cards:
                 title: Kitchen
                 entities: 
                 - entity: light.kitchen
+                  name: Ceiling
+                  icon: mdi:ceiling-light
                   tap_action:
                      action: toggle
                 - entity: media_player.kitchen_display
@@ -163,7 +168,8 @@ cards:
                 title: Hall
                 entities:
                 - entity: light.hallway
-#                  name: Ceiling Lights
+                  name: Ceiling
+                  icon: mdi:ceiling-light
                   tap_action:
                      action: toggle
                 - entity: sensor.thermostat_temperature
