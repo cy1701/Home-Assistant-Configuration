@@ -138,18 +138,18 @@ cloud:
 ######  Include Files
 ###############################################################
 
-automation: !include automations.yaml
-camera: !include cameras.yaml
+automation: !include includes/automations.yaml
+camera: !include includes/cameras.yaml
 device_tracker: !include includes/trackers.yaml
 #group: !include groups.yaml
-input_boolean: !include input_boolean.yaml
-input_select:  !include input_selects.yaml
-input_number: !include input_numbers.yaml
-light: !include lights.yaml
-sensor: !include sensors.yaml
-script: !include scripts.yaml
-weblink: !include weblinks.yaml
-wink: !include wink.yaml
+input_boolean: !include includes/input_boolean.yaml
+input_select:  !include includes/input_selects.yaml
+input_number: !include includes/input_numbers.yaml
+light: !include includes/lights.yaml
+sensor: !include includes/sensors.yaml
+script: !include includes/scripts.yaml
+weblink: !include includes/weblinks.yaml
+wink: !include includes/wink.yaml
 
 ###############################################################
 ######  Merge Include Files
