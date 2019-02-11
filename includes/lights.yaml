@@ -20,3 +20,5 @@
   schema: json
   brightness: true
   rgb: true
+  effect: true
+  effect_list: [random, strobe, flicker, addressable_rainbow, addressable_color_wipe, addressable_scan, addressable_twinkle, addressable_random_twinkle, addressable_fireworks, addressable_flicker]

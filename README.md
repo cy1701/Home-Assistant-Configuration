@@ -1,6 +1,6 @@
 # Welcome and thank you for stopping by to check out my configuration. 
 
-
+Moved to HassIO for the base OS from Raspbian
 
 ## Screenshots
 
@@ -14,22 +14,19 @@
 
 ## Hardware
 
-| Device | Source | Image |
-| ------ | ------ | ------ |
-|Raspberry PI III - running hassio|  Element14.com | [ <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/raspberry-pi-3.png" width="200"/>|
-| Wemo mini switches | Amazon.com | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/wemo.png" width="200"/>|
+| Device | Source | Image | Device | Source | Image |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+|Raspberry PI III - running hassio|  Element14.com | [ <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/raspberry-pi-3.png" width="200"/>| Wemo mini switches | Amazon.com | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/wemo.png" width="200"/>|
 |Phillips hue bulbs gen 1 & 2| Best Buy|   |
-|Google Home Hub|   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20hub.jpg" width="200"/>|
-|Google Mini| Various   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20mini.jpg" width="200"/>|
+|Google Home Hub|   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20hub.jpg" width="200"/>|Google Mini| Various   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20mini.jpg" width="200"/>|
 |Google Chromcast audio| Walmart   |  <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/chromecast%20audio.jpg" width="200"/>|
-Roku Mini| Amazon  |   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/roku.jpg" width="200"/>|
-
+|Roku Mini| Amazon  |   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/roku.jpg" width="200"/>|Kodi Players|      |        <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/kodi.jpg" width="200"/>|
 
 
 
 ## DIY
 Floating Crystal Tower   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/tower.jpg" width="200"/>
-based on https://youtu.be/Jh618yi0JZY - with esp8266 controller
+based on https://youtu.be/Jh618yi0JZY - with esp8266 controller  The configuration for E is located in /sanitized_ESPHome/tower.yaml
 
 
 ## Retired Technologies

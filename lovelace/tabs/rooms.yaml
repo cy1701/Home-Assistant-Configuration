@@ -31,6 +31,8 @@ cards:
                 name: Chair
                 tap_action:
                   action: toggle
+              - entity: light.tower_light_2
+                name: Cryastal Tower
               - entity: switch.fan
                 tap_action:
                   action: toggle
@@ -44,6 +46,7 @@ cards:
                 icon: mdi:movie
                 tap_action:
                   action: toggle
+
                 
             
         style:                 

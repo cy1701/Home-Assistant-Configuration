@@ -26,6 +26,9 @@ lovelace:
 # Enables configuration UI
 config:
 
+#V87 system health enable
+system_health:
+
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
 #   base_url: example.duckdns.org:8123
@@ -62,9 +65,9 @@ map:
 # Track the sun
 sun:
 
-weather:
-  - platform: darksky
-    api_key: !secret darksky_key
+#weather:
+#  - platform: darksky
+#    api_key: !secret darksky_key
 
 
 mqtt:
@@ -141,20 +144,19 @@ cloud:
 automation: !include includes/automations.yaml
 camera: !include includes/cameras.yaml
 device_tracker: !include includes/trackers.yaml
-#group: !include groups.yaml
 input_boolean: !include includes/input_boolean.yaml
 input_select:  !include includes/input_selects.yaml
 input_number: !include includes/input_numbers.yaml
 light: !include includes/lights.yaml
 sensor: !include includes/sensors.yaml
 script: !include includes/scripts.yaml
+weather: !include includes/weather.yaml
 weblink: !include includes/weblinks.yaml
 wink: !include includes/wink.yaml
 
 ###############################################################
 ######  Merge Include Files
 ###############################################################
-#automation: !include_dir_merge_list automations
 media_player:  !include_dir_merge_list  media_players
 scene: !include_dir_merge_list scenes
 zone: !include_dir_list zones
