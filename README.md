@@ -1,47 +1,1 @@
-# Welcome and thank you for stopping by to check out my configuration. 
-
-Moved to HassIO for the base OS from Raspbian
-
-## Screenshots
-
- <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/screenshots/rooms.png" width="800"/>
- <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/screenshots/media.png" width="800"/>
-
-## Automations
-# Lower the lights when Kodi is playing
-# Low temp notification for basement
-# Nightlight mode for ceiling lights in kitchen and hall
-
-## Hardware
-
-| Device | Source | Image | Device | Source | Image |
-| ------ | ------ | ------ | ------ | ------ | ------ |
-|Raspberry PI III - running hassio|  Element14.com | [ <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/raspberry-pi-3.png" width="200"/>| Wemo mini switches | Amazon.com | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/wemo.png" width="200"/>|
-|Phillips hue bulbs gen 1 & 2| Best Buy|   |
-|Google Home Hub|   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20hub.jpg" width="200"/>|Google Mini| Various   | <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20mini.jpg" width="200"/>|
-|Google Chromcast audio| Walmart   |  <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/chromecast%20audio.jpg" width="200"/>|
-|Roku Mini| Amazon  |   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/roku.jpg" width="200"/>|Kodi Players|      |        <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/kodi.jpg" width="200"/>|
-
-
-
-## DIY
-Floating Crystal Tower   <img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/tower.jpg" width="200"/>
-based on https://youtu.be/Jh618yi0JZY - with esp8266 controller  The configuration for E is located in /sanitized_ESPHome/tower.yaml
-
-
-## Retired Technologies
-|Device|Reason|
-| ------ |  ------ |
-| Wink spotter probes| Stopped talking|
-|DIRECTV receiver| Cut the cord|
-|LimitlessLED bulbs| (did not want to invest in new bridge. I might pull these back out if I build the ESP8266 milight contoller project.)|
-
-## Big Thanks
-Bob_NL for his "Chromecast Radio with station and player selection". We use it everyday!
-
-JamesMcCarthy79 for his layout examples. We loved the rounded corners,
-
-The main development team and all contributers to the project.
-
-Thank you
-
+# Welcome and thank you for stopping by to check out my configuration. Moved to HassIO for the base OS from Raspbian## ScreenshotsMain screen showing rooms![](https:///cy1701.github.io/screenshots/rooms.png)Media tab![](https:///cy1701.github.io/screenshots/media.png)## Automations- Lower the lights when Kodi is playing- Low temp notification for basement- Nightlight mode for ceiling lights in kitchen and hall## Hardware| Device | Source | Image | Device | Source | Image || ------ | ------ | ------ | ------ | ------ | ------ ||Raspberry PI III - running hassio|  Element14.com | [ <img src="cy1701.github.io/readme_images/raspberry-pi-3.png" width="200"/>| Wemo mini switches | Amazon.com | <img src="cy1701.github.io/readme_images/wemo.png" width="200"/>||Phillips hue bulbs gen 1 & 2| Best Buy|   |Ecobee 4 Thermostat w/Room Sensors | Amazon|  <img src="cy1701.github.io/readme_images/Ecobee4-300x300.png" width="200"/> ||Google Home Hub|   | <img src="cy1701.github.io/readme_images/google%20hub.jpg" width="200"/>|Google Mini| Various   | <img src="cy1701.github.io/readme_images/google%20mini.jpg" width="200"/>||Google Chromcast audio| Walmart   |  <img src="cy1701.github.io/readme_images/chromecast%20audio.jpg" width="200"/>||Roku Mini| Amazon  |   <img src="hcy1701.github.io/readme_images/roku.jpg" width="200"/>|Kodi Players|      |        <img src="cy1701.github.io/readme_images/kodi.jpg" width="200"/>|## DIYFloating Crystal Tower   <img src="cy1701.github.io/tower/images/tower.jpg" width="200"/>based on https://youtu.be/Jh618yi0JZY - with esp8266 controller  The configuration for E is located in /sanitized_ESPHome/tower.yaml## Retired Technologies|Device|Reason|| ------ |  ------ || Wink spotter probes| Stopped talking||DIRECTV receiver| Cut the cord||LimitlessLED bulbs| (did not want to invest in new bridge. I might pull these back out if I build the ESP8266 milight contoller project.)|## Big ThanksBob_NL for his "Chromecast Radio with station and player selection". We use it everyday!JamesMcCarthy79 for his layout examples. We loved the rounded corners,The main development team and all contributers to the project.Thank you

@@ -73,6 +73,8 @@ cards:
                  action: toggle
             - entity: switch.bedroom_speaker
               name: MPD Speaker
+              tap_action:
+                 action: toggle
             - entity: switch.wemo_switch_1
               name: Bedroom Fan
               icon: mdi:fan
