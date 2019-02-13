@@ -1,0 +1,12 @@
+- alias: 'Nightlight Off'
+  trigger:
+    platform: time
+    at: '08:00:02'
+  action:
+    - service: homeassistant.turn_off
+      data:
+        entity_id: light.hall_light
+    - service: homeassistant.turn_off
+      data:
+        entity_id: light.kitchen
+

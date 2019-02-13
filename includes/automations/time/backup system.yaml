@@ -1,0 +1,13 @@
+- alias: Weekly HA backup
+  initial_state: true
+  trigger:
+    - platform: time
+      at: '02:00:00'
+  condition:
+    - condition: time
+      weekday:
+        - sat
+  action:
+    - service: hassio.snapshot_full
+      data_template:
+        name: Full Backup {{ now().strftime('%Y%m%d') }} 

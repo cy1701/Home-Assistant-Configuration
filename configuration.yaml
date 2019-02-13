@@ -141,7 +141,7 @@ cloud:
 ######  Include Files
 ###############################################################
 
-automation: !include includes/automations.yaml
+#automation: !include includes/automations.yaml
 camera: !include includes/cameras.yaml
 device_tracker: !include includes/trackers.yaml
 input_boolean: !include includes/input_boolean.yaml
@@ -157,7 +157,8 @@ wink: !include includes/wink.yaml
 ###############################################################
 ######  Merge Include Files
 ###############################################################
-media_player:  !include_dir_merge_list  media_players
+automation: !include_dir_merge_list includes/automations
+media_player:  !include_dir_merge_list  includes/media_players
 scene: !include_dir_merge_list scenes
 zone: !include_dir_list zones
 

@@ -1,0 +1,7 @@
+- alias: 'Nightlight on'
+  trigger:
+    platform: time
+    at: '21:30:00'
+  action:
+    service: scene.turn_on
+    entity_id: scene.nightlights_active_mode

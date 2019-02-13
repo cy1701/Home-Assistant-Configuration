@@ -1,0 +1,7 @@
+- alias: 'Nightlight Normal'
+  trigger:
+    platform: time
+    at: '08:00:00'
+  action:
+    service: scene.turn_on
+    entity_id: scene.nightlights_full_mode

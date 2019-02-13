@@ -1,0 +1,13 @@
+- alias: 'Drop the Office lights'
+  trigger:
+    platform: state
+    entity_id: media_player.kodi_office
+    from: playing
+  condition:
+    condition: state
+    entity_id: input_boolean.enable_office_movie_time
+    state: 'on'
+  action:
+    service: scene.turn_on
+    data:
+      entity_id: scene.office_movie_time

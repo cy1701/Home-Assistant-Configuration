@@ -1,0 +1,14 @@
+- alias: 'Basement Temperature Below Freezing'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.basement_monitor_temperature
+    below: 35
+    for:
+        hours: 1
+        minutes: 0
+        seconds: 0
+  action:
+    service: tts.google_say
+    data_template:
+      entity_id: media_player.home_group
+      message: Basement is below 35 degrees. Current temperature is {{states('sensor.basement_monitor_temperature')}}
