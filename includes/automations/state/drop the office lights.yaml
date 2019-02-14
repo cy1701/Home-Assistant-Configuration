@@ -2,7 +2,7 @@
   trigger:
     platform: state
     entity_id: media_player.kodi_office
-    from: playing
+    to: playing
   condition:
     condition: state
     entity_id: input_boolean.enable_office_movie_time

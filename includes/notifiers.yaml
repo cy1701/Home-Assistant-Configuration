@@ -1,0 +1,12 @@
+- name: mail_steve
+  platform: smtp
+  server: !secret smtp_server
+  port: 587
+  timeout: 15
+  sender: !secret smtp_sender
+  encryption: starttls
+  username: !secret smtp_username
+  password: !secret smtp_password
+  recipient:
+   - !secret smtp_recipient1
+  sender_name: My Home Assistant

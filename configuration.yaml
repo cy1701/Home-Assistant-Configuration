@@ -148,6 +148,7 @@ input_boolean: !include includes/input_boolean.yaml
 input_select:  !include includes/input_selects.yaml
 input_number: !include includes/input_numbers.yaml
 light: !include includes/lights.yaml
+notify: !include includes/notifiers.yaml
 sensor: !include includes/sensors.yaml
 script: !include includes/scripts.yaml
 weather: !include includes/weather.yaml
