@@ -10,4 +10,7 @@
   action:
     - service: hassio.snapshot_full
       data_template:
-        name: Full Backup {{ now().strftime('%Y%m%d') }} 
+        name: Full_Backup_{{ now().strftime('%Y%m%d') }} 
+    - service: notify.mail_steve
+      data:
+        message: "HASS backup has run. the snapshot name is ---->  Full_Backup_{{ now().strftime('%Y%m%d') }} "
