@@ -19,30 +19,60 @@ radio_station:
     name: 'Select Radio Station:'
     options:
       - MagicRadio by PulsRadio
-      - Q-Music
-      - 3FM
-      - 100% NL
-      - Veronica
-      - Sky Radio
-      - Arrow Classic Rock
-      - Classic FM
-      - BNR Nieuwsradio
-      - SLAM! Hardstyle
-      - Sleep Radio
-      - Ambient Sleeping Pill
-      - Radio Art - Sleep
-      - Ambi Nature Radio
-      - Calm Radio - Sleep
-      - Dinamo.FM Sleep
+      - Europa FM
+      - Rock FM
+      - Digi FM
+      - Romantic FM
+      - Radio Clasic
+      - P1
+      - P2
+      - P3
+      - P4
+      - Ekot
+      - RIX FM
+      - Bandit Rock
+      - Lugna Favoriter
+      - STAR FM
+      - Power Hit Radio
+      - Bandit Ballads
+      - Bandit Classics
+      - Bandit Metal
+      - RIX FM FRESH
+      - Power Club
+      - Power Street
+      - Indie 101
+      - Svenska Favoriter
+      - Dansbandsfavoriter
+      - Star 90s
+      - Star 80s
+      - Star 70s
+      - Star 60s
+      - Electro Lounge
+      - One Hit Wonders
+      - Magic FM
+      - Guerilla
+      - Europa FM
+      - Rock FM
+      - Digi FM
+      - Romantic FM
+      - Radio Clasic
+      - Clasic Blue Jazz
+      - Clasic Hits
+      - Clasic Jazz
+      - Clasic Love
+      - Red Radio
+      - Clasic Rock
+      - Clasic Relax
       - 10 Hours Rain and Thunder
       - 8 Hour Deep Sleep Music - Delta Waves
       - 8 Hour Sleep Hypnosis
       - 10 Hours Fireplace
       - 10 Hours Forest Creek
-      - Rain 10 hours of Rain Storm on tin roof
+      - Rain 10 hours of Rain Storm on tin roof 
       - Rain Sounds for Sleeping
       - Sleep and Relaxation Nature Sounds
       - Thunderstorm and Rain Sounds over the Ocean
+
 chromecast_radio:
     name: 'Select Speakers:'
     options:

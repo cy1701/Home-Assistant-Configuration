@@ -20,6 +20,50 @@
             {% endif %}
            media_content_id: >
             {% if is_state("input_select.radio_station", "MagicRadio by PulsRadio") %} http://193.200.43.23:80/magicradioHD.mp3
+            {% elif is_state("input_select.radio_station", "Europa FM") %} http://astreaming.europafm.ro:8000/europafm_aacp48k.m3u
+            {% elif is_state("input_select.radio_station", "Rock FM") %} http://80.86.106.143:9128/rockfm.mp3
+            {% elif is_state("input_select.radio_station", "Digi FM") %} http://edge76.rdsnet.ro:84/digifm/digifm.mp3
+            {% elif is_state("input_select.radio_station", "Romantic FM") %} http://5.254.113.34:9123/romanticfm.aacp
+            {% elif is_state("input_select.radio_station", "Radio Clasic") %} http://37.251.146.169:8000/stream
+            {% elif is_state("input_select.radio_station", "P1") %} https://sverigesradio.se/topsy/direkt/132-hi-mp3
+            {% elif is_state("input_select.radio_station", "P2") %} https://sverigesradio.se/topsy/direkt/2562-hi-mp3
+            {% elif is_state("input_select.radio_station", "P3") %} https://sverigesradio.se/topsy/direkt/164-hi-mp3
+            {% elif is_state("input_select.radio_station", "P4") %} https://sverigesradio.se/topsy/direkt/212-hi-mp3
+            {% elif is_state("input_select.radio_station", "Ekot") %} https://sverigesradio.se/topsy/direkt/4540-hi-mp3
+            {% elif is_state("input_select.radio_station", "RIX FM") %} http://fm01-icecast.mtg-r.net/fm01_aac
+            {% elif is_state("input_select.radio_station", "Bandit Rock") %} http://fm02-icecast.mtg-r.net/fm02_aac
+            {% elif is_state("input_select.radio_station", "Lugna Favoriter") %} http://fm03-icecast.mtg-r.net/fm03_aac
+            {% elif is_state("input_select.radio_station", "STAR FM") %} http://fm05-icecast.mtg-r.net/fm05_aac
+            {% elif is_state("input_select.radio_station", "Power Hit Radio") %} http://fm04-icecast.mtg-r.net/fm04_aac
+            {% elif is_state("input_select.radio_station", "Bandit Ballads") %} http://wr21-ice.stream.mtgr.se/wr21_aac
+            {% elif is_state("input_select.radio_station", "Bandit Classics") %} http://wr11-icecast.mtg-r.net/wr11_aac
+            {% elif is_state("input_select.radio_station", "Bandit Metal") %} http://wr03-icecast.mtg-r.net/wr03_aac
+            {% elif is_state("input_select.radio_station", "RIX FM FRESH") %} http://wr04-icecast.mtg-r.net/wr04_aac
+            {% elif is_state("input_select.radio_station", "Power Club") %} http://wr06-icecast.mtg-r.net/wr06_aac
+            {% elif is_state("input_select.radio_station", "Power Street") %} http://wr07-icecast.mtg-r.net/wr07_aac
+            {% elif is_state("input_select.radio_station", "Indie 101") %} http://wr05-icecast.mtg-r.net/wr05_aac
+            {% elif is_state("input_select.radio_station", "Svenska Favoriter") %} http://wr13-icecast.mtg-r.net/wr13_aac
+            {% elif is_state("input_select.radio_station", "Dansbandsfavoriter") %} http://wr15-icecast.mtg-r.net/wr15_aac
+            {% elif is_state("input_select.radio_station", "Star 90s") %} http://wr12-icecast.mtg-r.net/wr12_aac
+            {% elif is_state("input_select.radio_station", "Star 80s") %} http://wr02-icecast.mtg-r.net/wr02_aac
+            {% elif is_state("input_select.radio_station", "Star 70s") %} http://wr10-icecast.mtg-r.net/wr10_aac
+            {% elif is_state("input_select.radio_station", "Star 60s") %} http://wr09-icecast.mtg-r.net/wr09_aac
+            {% elif is_state("input_select.radio_station", "Electro Lounge") %} http://wr16-icecast.mtg-r.net/wr16_aac
+            {% elif is_state("input_select.radio_station", "One Hit Wonders") %} http://wr18-icecast.mtg-r.net/wr18_aac
+            {% elif is_state("input_select.radio_station", "Magic FM") %} http://live.magicfm.ro:9128/magicfm.aacp
+            {% elif is_state("input_select.radio_station", "Guerilla") %} http://live.guerrillaradio.ro:8010/guerrilla.aac
+            {% elif is_state("input_select.radio_station", "Europa FM") %} http://astreaming.europafm.ro:8000/europafm_aacp48k.m3u
+            {% elif is_state("input_select.radio_station", "Rock FM") %} http://80.86.106.143:9128/rockfm.mp3
+            {% elif is_state("input_select.radio_station", "Digi FM") %} http://edge76.rdsnet.ro:84/digifm/digifm.mp3
+            {% elif is_state("input_select.radio_station", "Romantic FM") %} http://5.254.113.34:9123/romanticfm.aacp
+            {% elif is_state("input_select.radio_station", "Radio Clasic") %} http://37.251.146.169:8000/stream
+            {% elif is_state("input_select.radio_station", "Clasic Blue Jazz") %} http://37.251.146.169:8048/stream
+            {% elif is_state("input_select.radio_station", "Clasic Hits") %} http://37.251.146.169:7000/stream
+            {% elif is_state("input_select.radio_station", "Clasic Jazz") %} http://37.251.146.169:7800/stream
+            {% elif is_state("input_select.radio_station", "Clasic Love") %} http://37.251.146.169:8044/stream
+            {% elif is_state("input_select.radio_station", "Red Radio") %} http://37.251.146.169:8012/stream
+            {% elif is_state("input_select.radio_station", "Clasic Rock") %} http://37.251.146.169:7100/stream
+            {% elif is_state("input_select.radio_station", "Clasic Relax") %} http://37.251.146.169:8020/stream
             {% elif is_state("input_select.radio_station", "10 Hours Rain and Thunder") %} http://192.168.50.1/shares/USB_Storage/Music/10%20Hours%20Rain%20and%20Thunder%20Healing%20%20Ambient%20%20Sounds%20for%20Deep%20Sleeping%20Meditation%20Relaxation%20Spa.mp4
             {% elif is_state("input_select.radio_station", "8 Hour Deep Sleep Music - Delta Waves") %} http://192.168.50.1/shares/USB_Storage/Music/8%20Hour%20Deep%20Sleep%20Music-%20Delta%20Waves%2c.mp4
             {% elif is_state("input_select.radio_station", "8 Hour Sleep Hypnosis") %} http://192.168.50.1/shares/USB_Storage/Music/8%20Hour%20Sleep%20Hypnosis-%20.mp4
