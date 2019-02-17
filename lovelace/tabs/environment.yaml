@@ -40,4 +40,6 @@ cards:
     - entity: sensor.waqi_kingsport_tennessee_usa
     - entity: sun.sun
     - entity: camera.weather
+    
+
   

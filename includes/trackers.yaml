@@ -7,3 +7,9 @@
   interval_seconds: 120
   
 - platform: bluetooth_le_tracker
+
+
+- platform: ping
+  hosts:
+    edge_router: 192.168.50.1
+    hue_bridge: !secret hue_ip 

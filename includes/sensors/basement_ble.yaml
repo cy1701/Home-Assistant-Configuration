@@ -1,0 +1,9 @@
+- platform: mitemp_bt
+  mac: !secret mitemp1_mac 
+  name: Basement Monitor
+  force_update: false
+  median: 3
+  monitored_conditions:
+      - temperature
+      - humidity
+      - battery

@@ -4,29 +4,6 @@ title: Experimental
 cards:
 
 
-  - type: glance
-    title: Wall
-    entities: 
-        - light.tower_light_2
-
-  - type: custom:card-modder
-    card:
-        type: glance
-        title: Tower Light
-        entities: 
-          - light.tower_light_2
-    style:                 
-      border-radius: 20px
-      background-image: url("/local/backgrounds/mediabg1.jpg")
-      background-size: 100%
-      background-repeat: no-repeat
-      border: solid 1px rgba(100,100,100,0.3)
-      box-shadow: 3px 3px rgba(0,0,0,0.4)
-      overflow: hidden 
-
-
-
-
 
 #      - type: custom:canvas-gauge-card
   - type: alarm-panel
@@ -60,7 +37,36 @@ cards:
       overflow: hidden 
 
 
+  - type: custom:card-modder
+    card:        
+        type: picture-elements
+        image: /local/backgrounds/flu-alert-new.jpg
+        title: "Flu Alert"
+        elements:
+            - type: state-label
+              entity: sensor.avian_flu_symptoms
+              prefix: 'Avian   : '
+              icon: mdi:biohazard
+              style: {color: red, left: 20%, top: 10%, font-size: 150%, font-weight: bold}
 
+            - type: state-label
+              entity: sensor.flu_like_symptoms
+              prefix: 'Flu Like : '
+              style: {color: red, left: 20%, top: 23%, font-size: 150%, font-weight: bold}
+ 
+            - type: state-label
+              entity: sensor.cdc_level
+              prefix: 'CDC Level : '
+              style: {color: red, left: 20%, top: 53%, font-size: 150%, font-weight: bold}
+
+    style:                 
+      border-radius: 20px
+      border: solid 1px rgba(100,100,100,0.3)
+#          background-image: url("/local/backgrounds/internet-highway.jpg")
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      box-shadow: 3px 3px rgba(0,0,0,0.4)
+      overflow: hidden        
 
 
         

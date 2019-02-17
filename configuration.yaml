@@ -149,7 +149,6 @@ input_select:  !include includes/input_selects.yaml
 input_number: !include includes/input_numbers.yaml
 light: !include includes/lights.yaml
 notify: !include includes/notifiers.yaml
-sensor: !include includes/sensors.yaml
 script: !include includes/scripts.yaml
 weather: !include includes/weather.yaml
 weblink: !include includes/weblinks.yaml
@@ -161,5 +160,6 @@ wink: !include includes/wink.yaml
 automation: !include_dir_merge_list includes/automations
 media_player:  !include_dir_merge_list  includes/media_players
 scene: !include_dir_merge_list includes/scenes
+sensor: !include_dir_merge_list includes/sensors
 zone: !include_dir_list includes/zones
 
