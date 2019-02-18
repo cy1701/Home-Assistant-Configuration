@@ -31,7 +31,7 @@ cards:
                 name: Chair
                 tap_action:
                   action: toggle
-              - entity: light.tower_light_2
+              - entity: light.tower_light
                 name: Cryastal Tower
               - entity: switch.fan
                 tap_action:
@@ -180,6 +180,7 @@ cards:
                 - entity: sensor.thermostat_temperature
                   name: Thermostat
 
+
             style:                 
               border-radius: 20px
               background-image: url("/local/backgrounds/background1.jpg")
@@ -222,7 +223,7 @@ cards:
                 - input_select.radio_station
                 - input_select.chromecast_radio
                 - input_number.volume_radio                    
-                - script.radio538
+
         style:                 
           border-radius: 20px
           background-image: url("/local/backgrounds/tape.jpg")

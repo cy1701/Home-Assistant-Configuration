@@ -74,19 +74,31 @@ cards:
 
   - type: custom:card-modder
     card:
-        type: entities
-        title: Whole House Radio
+        type: glance
+        title: test area
         entities: 
-            - input_number.volume_radio
-            - input_select.radio_station
-            - input_select.chromecast_radio
-            - script.radio538
+            - input_boolean.test_button_1
+            - input_boolean.test_button_2
+            - input_boolean.test_button_3
+            - input_boolean.test_button_4
+            - input_boolean.test_button_5
     style:                 
       border-radius: 20px
-      background-image: url("/local/backgrounds/tape.jpg")
+      background-image: url("/local/backgrounds/maxresdefault.jpg")
       background-size: 100%
       background-repeat: no-repeat
       border: solid 1px rgba(100,100,100,0.3)
       box-shadow: 3px 3px rgba(0,0,0,0.4)
       overflow: hidden 
+
+
+
+
+
+
+  - type: glance
+    entities:
+    - entity: light.coach_light
+      name: Coach light
+
 

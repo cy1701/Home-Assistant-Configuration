@@ -1,0 +1,13 @@
+- alias: 'Coach Candle'
+  trigger:
+    platform: state
+    entity_id: media_player.kodi
+    to: playing
+  condition:
+    condition: state
+    entity_id: input_boolean.enable_movie_time
+    state: 'on'
+  action:
+    service: scene.turn_on
+    data:
+      entity_id: light.coach_light

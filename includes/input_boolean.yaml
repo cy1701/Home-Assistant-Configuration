@@ -3,4 +3,26 @@
     initial: off
   enable_office_movie_time:
     name: Office Movie Time
-    initial: off    
+    initial: off   
+
+
+
+
+
+
+#experimental controls for when needed
+  test_button_1:
+    name: Test Button 1
+    initial: off 
+  test_button_2:
+    name: Test Button 2
+    initial: off 
+  test_button_3:
+    name: Test Button 3
+    initial: off
+  test_button_4:
+    name: Test Button 4
+    initial: off 
+  test_button_5:
+    name: Test Button 5
+    initial: off 
