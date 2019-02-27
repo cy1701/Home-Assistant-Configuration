@@ -33,4 +33,5 @@ custom_components/sensor/__pycache__/
 .cloud
 .google.token
 esphomeyaml
+esphome
 experimental.yaml

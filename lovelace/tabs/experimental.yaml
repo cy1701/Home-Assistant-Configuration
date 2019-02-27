@@ -100,5 +100,6 @@ cards:
     entities:
     - entity: light.coach_light
       name: Coach light
+#    - configurator.ecobee
 
 

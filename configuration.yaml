@@ -34,9 +34,9 @@ system_health:
 #   base_url: example.duckdns.org:8123
 http:
   api_password: !secret http_password
-  base_url: !secret http_url
-  ssl_certificate: !secret cert_path
-  ssl_key: !secret cert_key_path
+#  base_url: !secret http_url
+#  ssl_certificate: !secret cert_path
+#  ssl_key: !secret cert_key_path
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -65,9 +65,27 @@ map:
 # Track the sun
 sun:
 
-#weather:
-#  - platform: darksky
-#    api_key: !secret darksky_key
+rest_command:
+  google_backup:
+    url: !secret google_backup_url
+    timeout: '300'
+
+
+recorder:
+  purge_interval: 1
+  purge_keep_days: 14
+  exclude:
+     domains:
+      - automation
+      - media_player
+
+panel_iframe:
+  router:
+    title: 'Router'
+    url: !secret weblink1
+  portainer:
+    title: 'Portainer'
+    url: !secret portainer
 
 
 mqtt:
@@ -96,7 +114,6 @@ simplisafe:
       password: !secret alarm_password
 
 
-
 ecobee:
   api_key: !secret ecobee_key
 
@@ -111,6 +128,7 @@ geo_location:
 hue:
   bridges:
     - host: !secret hue_ip
+
 
 ifttt:
   key: !secret ifttt_key

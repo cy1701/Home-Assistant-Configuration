@@ -222,7 +222,8 @@ cards:
             entities: 
                 - input_select.radio_station
                 - input_select.chromecast_radio
-                - input_number.volume_radio                    
+                - input_number.volume_radio
+                - script.radio538
 
         style:                 
           border-radius: 20px

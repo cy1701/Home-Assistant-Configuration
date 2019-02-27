@@ -6,6 +6,9 @@
   condition:
     - condition: time
       weekday:
+        - mon
+        - wed
+        - fri
         - sat
   action:
     - service: hassio.snapshot_full

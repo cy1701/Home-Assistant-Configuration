@@ -1,0 +1,17 @@
+- alias: Send backup to Google
+  initial_state: true
+  trigger:
+    - platform: time
+      at: '02:30:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - wed
+        - fri
+        - sat
+  action:
+    - service: rest_command.google_backup
+    - service: notify.mail_steve
+      data:
+        message: "HASS backup has been copied to your Google Drive. The snapshot name is ---->  Full_Backup_{{ now().strftime('%Y%m%d') }} "
