@@ -77,11 +77,13 @@ cards:
         type: glance
         title: test area
         entities: 
-            - input_boolean.test_button_1
-            - input_boolean.test_button_2
-            - input_boolean.test_button_3
-            - input_boolean.test_button_4
-            - input_boolean.test_button_5
+          - entity: input_boolean.test_button_1
+            tap_action:
+                action: toggle
+          - entity: input_boolean.test_button_2
+          - entity: input_boolean.test_button_3
+          - entity: input_boolean.test_button_4
+          - entity: input_boolean.test_button_5
     style:                 
       border-radius: 20px
       background-image: url("/local/backgrounds/maxresdefault.jpg")

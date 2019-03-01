@@ -1,13 +1,13 @@
 - alias: 'Coach Candle'
   trigger:
     platform: state
-    entity_id: media_player.kodi
-    to: playing
-  condition:
-    condition: state
-    entity_id: input_boolean.enable_movie_time
-    state: 'on'
+    entity_id: input_boolean.test_button_1
+    to: 'on'
+
   action:
-    service: scene.turn_on
+  - service: homeassistant.turn_on
+    entity_id: light.coach_light
     data:
-      entity_id: light.coach_light
+      brightness: 255
+      rgb_color: [255,126,0]
+      effect: Flicker Effect With Custom Values
