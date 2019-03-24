@@ -29,6 +29,7 @@ html5_push_registrations.conf
 ip_bans.yaml
 /icloud/*
 custom_components/sensor/__pycache__/
+__pycache__
 .storage
 .cloud
 .google.token

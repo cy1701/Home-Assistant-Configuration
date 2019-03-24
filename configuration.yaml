@@ -32,19 +32,16 @@ custom_updater:
     - cards
     - components
   card_urls:
-    # Mini graph card
-#    - https://raw.githubusercontent.com/kalkih/mini-graph-card/master/tracker.json
-    # Mini media player
     - https://raw.githubusercontent.com/kalkih/mini-media-player/master/tracker.json
 
-#V87 system health enable
+# system health enable
 system_health:
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
 #   base_url: example.duckdns.org:8123
 http:
-  api_password: !secret http_password
+#  api_password: !secret http_password
 #  base_url: !secret http_url
 #  ssl_certificate: !secret cert_path
 #  ssl_key: !secret cert_key_path
