@@ -3,6 +3,7 @@ id: rooms
 title: Rooms
 panel: true
 cards:
+
   - type: vertical-stack
     column_width: calc(100% / 1)
     cards:
@@ -233,5 +234,6 @@ cards:
           border: solid 1px rgba(100,100,100,0.3)
           box-shadow: 3px 3px rgba(0,0,0,0.4)
           overflow: hidden                
+
 
    

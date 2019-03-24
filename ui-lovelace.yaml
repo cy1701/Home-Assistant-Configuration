@@ -2,21 +2,26 @@ title: Our House
 icon: mdi:home-city-outline
 background: center / cover no-repeat url("/local/backgrounds/background-15.gif") fixed 
 resources:
-  - url: /local/mini-media-player-bundle.js?v=0.9.8
+  - url: /local/mini-media-player-bundle.js?v=1.0.3
     type: js
   - url: /local/canvas-gauge-card.js
     type: module
-  - url: /local/monster-card.js
+  - url: /local/monster-card.js?v=0.2.3
     type: js
-  - url: /local/card-modder.js??v=1
+  - url: /local/card-modder.js?v=b44fb3
     type: js
   - url: /local/card-tools.js?v=6ce5d0
     type: js
+  - url: /customcards/github/maykar/compact-custom-header.js?track=true
+    type: module
+  - url: /customcards/github/maykar/compact-custom-header.js?track=true
+    type: module
 views:
 
-  - !include lovelace/tabs/rooms.yaml           
-  - !include lovelace/tabs/environment.yaml
-  - !include lovelace/tabs/media.yaml
-  - !include lovelace/tabs/systems-status.yaml
-  - !include lovelace/tabs/experimental.yaml
-  - !include lovelace/tabs/devices.yaml
+
+  - !include lovelace/tabs/00-rooms.yaml           
+  - !include lovelace/tabs/10-environment.yaml
+  - !include lovelace/tabs/20-media.yaml
+  - !include lovelace/tabs/33-systems-status.yaml
+  - !include lovelace/tabs/69-experimental.yaml
+  - !include lovelace/tabs/99-devices.yaml

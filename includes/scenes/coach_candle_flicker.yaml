@@ -1,0 +1,6 @@
+ - name: 'Coach Candle Flicker'
+   entities:
+    light.coach_light:
+        state: on
+        brightness: 255
+        effect: Flicker Effect With Custom Values

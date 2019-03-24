@@ -26,6 +26,17 @@ lovelace:
 # Enables configuration UI
 config:
 
+#configure custom updater
+custom_updater:
+  track:
+    - cards
+    - components
+  card_urls:
+    # Mini graph card
+#    - https://raw.githubusercontent.com/kalkih/mini-graph-card/master/tracker.json
+    # Mini media player
+    - https://raw.githubusercontent.com/kalkih/mini-media-player/master/tracker.json
+
 #V87 system health enable
 system_health:
 
@@ -80,12 +91,25 @@ recorder:
       - media_player
 
 panel_iframe:
+  configurator:
+    title: 'Configurator'
+    url: !secret configurator_addr
+    icon: mdi:file-document-edit
+  esphome_mgr:
+    title: "ESPhome"
+    url: !secret esphome_addr
   router:
     title: 'Router'
     url: !secret weblink1
+    icon: mdi:router-wireless
   portainer:
     title: 'Portainer'
     url: !secret portainer
+    icon: mdi:docker
+  urbackup:
+    title: 'UrBackup'    
+    url: !secret urbackup
+    icon: mdi:backup-restore
 
 
 mqtt:
@@ -154,6 +178,16 @@ tts:
 
 # Cloud
 cloud:
+  google_actions:
+    filter:
+      include_entities:
+        - switch.wall_monitor
+        - switch.wemo_switch_1
+  alexa:
+    filter:
+      include_entities:
+        - switch.wall_monitor
+
 
 ###############################################################
 ######  Include Files

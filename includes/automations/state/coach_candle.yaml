@@ -10,4 +10,7 @@
     data:
       brightness: 255
       rgb_color: [255,126,0]
-      effect: Flicker Effect With Custom Values
+      effect: "Flicker Effect With Custom Values"
+#  - service: scene.turn_on
+#    data:
+#      entity_id: scene.coach_candle_flicker

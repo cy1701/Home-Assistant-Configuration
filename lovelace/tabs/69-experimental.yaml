@@ -102,6 +102,8 @@ cards:
     entities:
     - entity: light.coach_light
       name: Coach light
+    - entity: light.tv_lights
+      name: TV Lights
 #    - configurator.ecobee
 
 
