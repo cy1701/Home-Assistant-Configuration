@@ -4,6 +4,7 @@
 *.crt
 *.key
 www
+node-red
 OZW_Log.txt
 home-assistant.log
 home-assistant_v2.db
@@ -36,3 +37,4 @@ __pycache__
 esphomeyaml
 esphome
 experimental.yaml
+*.bad

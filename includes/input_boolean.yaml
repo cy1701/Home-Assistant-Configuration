@@ -1,8 +1,8 @@
-  enable_movie_time:
-    name: Movie Time
+  living_room_theater_mode:
+    name: Living Room Theater Mode
     initial: off
-  enable_office_movie_time:
-    name: Office Movie Time
+  office_theater_mode:
+    name: Office Theater Mode
     initial: off   
 
 

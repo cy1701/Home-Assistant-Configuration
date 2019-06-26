@@ -114,3 +114,5 @@ light.living_room_accent:
 script.radio538:
   friendly_name: Start Playing
   icon: mdi:play
+switch.living_room_ceiling_fan_relay:
+  friendly_name: Living Room Ceiling Fan

@@ -8,7 +8,17 @@ hass_theme:
      - wood
    initial: default
    icon: mdi:theme-light-dark
-
+spotify_source:
+   name: 'Source:'
+   options:
+     - Home group
+     - Bathroom speaker
+     - Bedroom speaker
+     - Kitchen display
+     - Living Room display
+     - Office Speaker
+     - Shop Cast
+     - Pixel 2
 media_lockout:
   name: "Media Automation"
   options:

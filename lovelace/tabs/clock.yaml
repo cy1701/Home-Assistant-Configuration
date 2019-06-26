@@ -1,0 +1,69 @@
+---
+id: clock
+title: Alarm Clock
+panel: true
+cards:
+- type: vertical-stack
+  cards:
+    - type: "custom:alarm-clock-card"
+      alarm_entities:
+        - entity_id: input_boolean.alarm_clock
+        - entity_id: media_player.gpm_desktop_player
+      scripts:
+        - entity: script.start_lights_bedroom_slowly
+          when: '-00:30'
+        - entity: light.bathroom
+          when: on_dismiss
+          service: light.turn_on
+      holiday:
+        calendars:
+          - calendar.holidays
+      cards:
+        - type: 'custom:simple-weather-card'
+          entity: weather.yweather
+        - type: media-control
+          entity: media_player.gpm_desktop_player
+        - type: "custom:monster-card"
+          card:
+            title: Devices requiring your attention
+            type: entities
+          show_empty: false
+          filter:
+            include:
+              - state: "on"
+              - state: "playing"
+            exclude:
+              - domain: group
+              - domain: weather
+              - domain: calendar
+              - domain: input_boolean
+              - domain: binary_sensor
+              - entity_id: switch.licht_nachtkastje
+          when:
+            entity: group.all_important_devices
+            state: 'on'
+        - type: "custom:monster-card"
+          card:
+            title: Quick info
+            type: glance
+          filter:
+            include:
+              - entity_id: group.all_important_devices
+                options:
+                  name: "All lights"
+                  tap_action: toggle
+              - entity_id: switch.licht_nachtkastje
+                options:
+                  name: "Licht nachtkastje"
+                  tap_action: toggle
+              - entity_id: binary_sensor.alarm
+              - entity_id: binary_sensor.motion
+              - entity_id: binary_sensor.back_door
+              - entity_id: binary_sensor.front_door
+              - entity_id: sensor.temperature
+              - entity_id: sensor.humidity
+              - entity_id: sensor.illuminance
+          when:
+            entity: group.all_important_devices
+            state: 'off'
+

@@ -33,9 +33,12 @@ custom_updater:
     - components
   card_urls:
     - https://raw.githubusercontent.com/kalkih/mini-media-player/master/tracker.json
+    - https://raw.githubusercontent.com/rdehuyss/homeassistant-lovelace-alarm-clock-card/master/custom_updater.json
 
 # system health enable
 system_health:
+
+
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
@@ -88,13 +91,6 @@ recorder:
       - media_player
 
 panel_iframe:
-  configurator:
-    title: 'Configurator'
-    url: !secret configurator_addr
-    icon: mdi:file-document-edit
-  esphome_mgr:
-    title: "ESPhome"
-    url: !secret esphome_addr
   router:
     title: 'Router'
     url: !secret weblink1
@@ -109,25 +105,8 @@ panel_iframe:
     icon: mdi:backup-restore
 
 
-mqtt:
-  broker: !secret mqtt_server
-  port: !secret mqtt_port
-  client_id: ha
-  discovery: true
-  keepalive: 60
-  username: !secret mqtt_user
-  password: !secret mqtt_pass
-  birth_message:
-    topic: 'hass/status'
-    payload: 'online'
-    qos: 1
-    retain: true
-  will_message:
-    topic: 'hass/status'
-    payload: 'offline'
-    qos: 1
-    retain: true
 
+hassio:
 
 simplisafe:
   accounts:
@@ -170,21 +149,14 @@ wemo:
 
 # Text to speech
 tts:
-  - platform: google
+  - platform: google_translate
+    service_name: google_say
     language: 'en-uk'
 
 # Cloud
-cloud:
-  google_actions:
-    filter:
-      include_entities:
-        - switch.wall_monitor
-        - switch.wemo_switch_1
-  alexa:
-    filter:
-      include_entities:
-        - switch.wall_monitor
+cloud:   
 
+wink:
 
 ###############################################################
 ######  Include Files
@@ -192,7 +164,7 @@ cloud:
 
 #automation: !include includes/automations.yaml
 camera: !include includes/cameras.yaml
-device_tracker: !include includes/trackers.yaml
+#device_tracker: !include includes/trackers.yaml
 input_boolean: !include includes/input_boolean.yaml
 input_select:  !include includes/input_selects.yaml
 input_number: !include includes/input_numbers.yaml
@@ -201,7 +173,7 @@ notify: !include includes/notifiers.yaml
 script: !include includes/scripts.yaml
 weather: !include includes/weather.yaml
 weblink: !include includes/weblinks.yaml
-wink: !include includes/wink.yaml
+#wink: !include includes/wink.yaml
 
 ###############################################################
 ######  Merge Include Files

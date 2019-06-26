@@ -1,0 +1,27 @@
+---
+id: devices
+title: Devices
+cards:
+
+  - type: custom:tracker-card
+  
+  
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      title: 'On'
+    filter:
+      include:
+        - entity_id: "device_tracker.*"
+          state: "home"
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      title: 'Off'
+    filter:
+      include:
+        - entity_id: "device_tracker.*"
+          state: "	not_home"
+

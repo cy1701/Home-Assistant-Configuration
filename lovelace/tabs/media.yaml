@@ -166,13 +166,37 @@ cards:
 
     - type: horizontal-stack
       cards:              
+      - type: custom:card-modder
+        card:
+            type: custom:mini-media-player
+            entity: media_player.firetv_office
+            icon: mdi:kodi
+            name: Office Fire TV
+            artwork: full-cover-fit
+            show_source: full
+            artwork_border: true
+            more_info: true
+        style:                 
+          border-radius: 20px
+          background-image: url("/local/backgrounds/background2.jpg")
+          background-size: cover
+          background-repeat: no-repeat
+          border: solid 1px rgba(100,100,100,0.3)
+          box-shadow: 3px 3px rgba(0,0,0,0.4)
+          overflow: hidden
 
+
+
+
+    - type: horizontal-stack
+      cards:          
 
       - type: custom:card-modder
         card:
               type: custom:mini-media-player
               entity: media_player.spotify
               name: Spotify Player
+              group: true
               artwork: full-cover
               show_source: full
               media_list:
@@ -197,6 +221,17 @@ cards:
                   - name: Music For Sleep Thunderstorm, Rain â€“ Sounds Of Nature & Rain
                     type: playlist
                     url: spotify:user:12165568231:playlist:7iom8WU2sWHe7HEwd3EvGA
+              shortcuts:
+                columns: 4 # Max buttons per row
+                buttons:
+                  # Start predefined playlist
+                  - icon: mdi:cat
+                    type: source
+                    id: Office Speaker
+                  # Change the source to bathroom
+                  - icon: mdi:dog
+                    type: source
+                    id: 57038a69c8ad449a9417716b8b25d3ae
         style:                 
           border-radius: 20px
           background-image: url("/local/backgrounds/background2.jpg")

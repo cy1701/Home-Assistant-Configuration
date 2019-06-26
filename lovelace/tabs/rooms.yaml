@@ -28,6 +28,11 @@ cards:
                 icon: mdi:ceiling-light
                 tap_action:
                   action: toggle
+              - entity:  switch.living_room_ceiling_fan_relay
+                name: Ceiling Fan
+                icon: mdi:fan
+                tap_action:
+                  action: toggle
               - entity: light.living_room_chair_table
                 name: Chair
                 tap_action:
@@ -43,7 +48,9 @@ cards:
                 icon: mdi:kodi
               - entity: media_player.55_tcl_roku_tv
                 name: Roku Tv
-              - entity: input_boolean.enable_movie_time
+               
+              - entity: input_boolean.living_room_theater_mode
+                name: Theater Mode
                 icon: mdi:movie
                 tap_action:
                   action: toggle
@@ -72,7 +79,7 @@ cards:
               icon: mdi:ceiling-light
               tap_action:
                  action: toggle
-            - entity: switch.bedroom_speaker
+            - entity: switch.bedroom_ss30_relay_4
               name: MPD Speaker
               tap_action:
                  action: toggle
@@ -84,6 +91,10 @@ cards:
             - entity: media_player.bedroom_speaker
               name: Clock
               icon: mdi:clock
+            - entity: switch.bedroom_ss30_relay_5
+              icon: mdi:lamp
+              tap_action:
+                 action: toggle            
             - entity: sensor.bedroom_sensor_temperature
               name: Temperature
             - entity: binary_sensor.bedroom_sensor_occupancy
@@ -122,7 +133,8 @@ cards:
                   tap_action:
                      action: toggle
                 - entity: media_player.office_speaker
-                - entity: input_boolean.enable_office_movie_time
+                - entity:  input_boolean.office_theater_mode
+                  name: Theater Mode
                   icon: mdi:movie
                   tap_action:
                     action: toggle

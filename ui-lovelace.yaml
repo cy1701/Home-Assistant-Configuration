@@ -2,26 +2,44 @@ title: Our House
 icon: mdi:home-city-outline
 background: center / cover no-repeat url("/local/backgrounds/background-15.gif") fixed 
 resources:
-  - url: /local/mini-media-player-bundle.js?v=1.0.3
+  - url: /local/mini-media-player-bundle.js?track=true
     type: js
-  - url: /local/canvas-gauge-card.js
+  - url: /local/canvas-gauge-card.js?track=true
     type: module
   - url: /local/monster-card.js?v=0.2.3
     type: js
-  - url: /local/card-modder.js?v=b44fb3
+  - url: /local/card-modder.js?track=true
     type: js
-  - url: /local/card-tools.js?v=6ce5d0
+  - url: /local/card-tools.js?track=true
     type: js
   - url: /customcards/github/maykar/compact-custom-header.js?track=true
     type: module
   - url: /customcards/github/maykar/compact-custom-header.js?track=true
     type: module
+  - url: /local/tracker-card.js?track=true
+    type: module
+  - url: https://unpkg.com/moment@2.22.2/min/moment.min.js
+    type: js
+  - url: https://cdn.jsdelivr.net/npm/flatpickr
+    type: js
+  - url: https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css
+    type: css
+  - url: /local/custom_ui/alarm-clock-card/alarm-clock-card.js?v=0.5.0
+    type: module
+  - url: /local/camera-card.js
+    type: module
+  - url: https://cdn.jsdelivr.net/gh/custom-cards/spotify-card@1.5/dist/spotify-card.umd.js
+    type: module
+
 views:
 
 
-  - !include lovelace/tabs/00-rooms.yaml           
-  - !include lovelace/tabs/10-environment.yaml
-  - !include lovelace/tabs/20-media.yaml
-  - !include lovelace/tabs/33-systems-status.yaml
-  - !include lovelace/tabs/69-experimental.yaml
-  - !include lovelace/tabs/99-devices.yaml
+  - !include lovelace/tabs/rooms.yaml           
+  - !include lovelace/tabs/environment.yaml
+  - !include lovelace/tabs/media.yaml
+#  - !include lovelace/tabs/systems-status.yaml
+  - !include lovelace/tabs/clock.yaml
+  - !include lovelace/tabs/experimental.yaml
+  - !include lovelace/tabs/devices.yaml
+
+  - !include lovelace/tabs/shop.yaml  

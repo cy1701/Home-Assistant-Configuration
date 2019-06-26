@@ -1,7 +1,14 @@
 - platform: snmp
-  name: 'Nuc uptime'
-  host: 192.168.50.17
-  baseoid: 1.3.6.1.2.1.1.3.0
+  name: 'nas free space'
+  host: 192.168.50.7
+  community: funnycat
+  version: 2c
+  baseoid: .1.3.6.1.4.1.5127.1.1.1.8.1.9.1.6.1
   accept_errors: true
-  unit_of_measurement: 'minutes'
-  value_template: '{{((value | int) / 6000) | int}}'
+- platform: snmp
+  name: 'nas total space'
+  host: 192.168.50.7
+  community: funnycat
+  version: 2c
+  baseoid: .1.3.6.1.4.1.5127.1.1.1.8.1.9.1.5
+  accept_errors: true

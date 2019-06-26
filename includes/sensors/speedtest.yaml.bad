@@ -1,4 +1,5 @@
-- platform: speedtest
+- platform: speedtestdotnet
+  scan_interval:
   hour:
   - 8
   - 12
