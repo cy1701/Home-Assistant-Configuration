@@ -38,3 +38,5 @@ esphomeyaml
 esphome
 experimental.yaml
 *.bad
+custom_components/hacs
+custom_components/__pycache__/

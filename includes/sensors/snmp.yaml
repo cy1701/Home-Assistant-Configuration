@@ -3,12 +3,45 @@
   host: 192.168.50.7
   community: funnycat
   version: 2c
-  baseoid: .1.3.6.1.4.1.5127.1.1.1.8.1.9.1.6.1
+  baseoid: 1.3.6.1.4.1.5127.1.1.1.8.1.9.1.6.1
   accept_errors: true
 - platform: snmp
   name: 'nas total space'
   host: 192.168.50.7
   community: funnycat
   version: 2c
-  baseoid: .1.3.6.1.4.1.5127.1.1.1.8.1.9.1.5
+  baseoid: 1.3.6.1.4.1.5127.1.1.1.8.1.9.1.5
   accept_errors: true
+- platform: snmp
+  name: 'ups battery capacity'
+  host: 192.168.50.17
+  port: 164
+  community: public
+  baseoid: 1.3.6.1.4.1.3808.1.1.1.2.2.1
+  accept_errors: true 
+- platform: snmp
+  name: 'ups input voltage'
+  host: 192.168.50.17
+  port: 164
+  community: public
+  baseoid: 1.3.6.1.4.1.3808.1.1.1.3.2.2
+  accept_errors: true 
+- platform: snmp
+  name: 'ups output voltage'
+  host: 192.168.50.17
+  port: 164
+  community: public
+  baseoid: 1.3.6.1.4.1.3808.1.1.1.4.2.1
+  accept_errors: true 
+- platform: snmp
+  name: 'ups output load'
+  host: 192.168.50.17
+  port: 164  
+  community: public
+  baseoid: 1.3.6.1.4.1.3808.1.1.1.4.2.3
+  accept_errors: true   
+  
+  
+  
+  
+  

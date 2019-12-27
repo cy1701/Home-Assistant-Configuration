@@ -38,7 +38,7 @@ views:
   - !include lovelace/tabs/environment.yaml
   - !include lovelace/tabs/media.yaml
 #  - !include lovelace/tabs/systems-status.yaml
-  - !include lovelace/tabs/clock.yaml
+#  - !include lovelace/tabs/clock.yaml
   - !include lovelace/tabs/experimental.yaml
   - !include lovelace/tabs/devices.yaml
 

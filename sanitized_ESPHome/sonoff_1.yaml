@@ -1,0 +1,61 @@
+esphome:
+  name: sonoff_1
+  platform: ESP8266
+  board: esp01_1m
+#Shop Receiver controller
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  manual_ip:
+    static_ip: !secret sonoff_1_ip
+    gateway: !secret house_gateway
+    subnet: 255.255.255.0
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret ha_esp_api_pw
+
+ota:
+  password: !secret sonoff_1_ota
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "sonoff_1 button"
+    on_press:
+      - switch.toggle: relay
+
+  - platform: status
+    name: "Shop Receiver Status"
+
+
+switch:
+  - platform: gpio
+    name: "sonoff_1 relay"
+    pin: GPIO12
+    id: relay
+
+status_led:
+  pin:
+    number: GPIO13
+    inverted: yes
+
+sensor:
+  - platform: wifi_signal
+    name: "sonoff_1 WiFi signal"
+    update_interval: 60s
+
+  - platform: uptime
+    name: "sonoff_1 uptime"
+
+text_sensor:
+  - platform: version
+    name: "sonoff_1 ESPHome version"

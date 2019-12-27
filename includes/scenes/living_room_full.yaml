@@ -6,10 +6,10 @@
     light.living_room_chair_table:
         state: on
         brightness: 255
-    light.living_room_ceiling_1:
+    light.living_room_ceiling_light_1:
         state: on
         brightness: 255
-    light.living_room_ceiling_2:
+    light.living_room_ceiling_light_2:
         state: on
         brightness: 255
     light.living_room_accent:

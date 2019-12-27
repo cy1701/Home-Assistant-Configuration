@@ -37,18 +37,26 @@ cards:
                 name: Chair
                 tap_action:
                   action: toggle
-              - entity: light.tower_light
-                name: Cryastal Tower
-              - entity: switch.fan
+              - entity: light.3d_light
+                name: 3D light
+              - entity: switch.living_room_ss30_relay_5
+                name: Living Cat Light
+              - entity: switch.living_room_ss30_relay_1
+                icon: mdi:fan
                 tap_action:
                   action: toggle
-              - entity: media_player.living_room_display
+              - entity: switch.living_room_ss30_relay_2
+                icon: mdi:radiator
+                tap_action:
+                  action: toggle
+              - entity: media_player.nesthub4992
                 name: Google Display
               - entity: media_player.kodi
                 icon: mdi:kodi
               - entity: media_player.55_tcl_roku_tv
                 name: Roku Tv
-               
+              - entity: light.coach_light
+                name: Coach Lamp               
               - entity: input_boolean.living_room_theater_mode
                 name: Theater Mode
                 icon: mdi:movie
@@ -80,19 +88,31 @@ cards:
               tap_action:
                  action: toggle
             - entity: switch.bedroom_ss30_relay_4
-              name: MPD Speaker
+              icon: mdi:speaker
+              name: Tammy's Speaker
               tap_action:
                  action: toggle
             - entity: switch.wemo_switch_1
               name: Bedroom Fan
               icon: mdi:fan
               tap_action:
-                 action: toggle            
+                 action: toggle
+            - entity: switch.bedroom_ss30_relay_2
+              name: Humidifier
+              icon: mdi:air-humidifier
+              tap_action:
+                 action: toggle                 
             - entity: media_player.bedroom_speaker
               name: Clock
               icon: mdi:clock
+            - entity: switch.bedroom_ss30_relay_1
+              name: Bedroom Floor Light
+              icon: mdi:lighthouse
+              tap_action:
+                 action: toggle
             - entity: switch.bedroom_ss30_relay_5
-              icon: mdi:lamp
+              name: Cat Light
+              icon: mdi:cat
               tap_action:
                  action: toggle            
             - entity: sensor.bedroom_sensor_temperature
@@ -162,6 +182,9 @@ cards:
                   tap_action:
                      action: toggle
                 - entity: media_player.kitchen_display
+                - entity:  switch.gosund_1_relay
+                  icon: mdi:fan
+
             style:                 
               border-radius: 20px
               background-image: url("/local/backgrounds/background2.jpg")

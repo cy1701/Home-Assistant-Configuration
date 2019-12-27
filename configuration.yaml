@@ -26,19 +26,12 @@ lovelace:
 # Enables configuration UI
 config:
 
-#configure custom updater
-custom_updater:
-  track:
-    - cards
-    - components
-  card_urls:
-    - https://raw.githubusercontent.com/kalkih/mini-media-player/master/tracker.json
-    - https://raw.githubusercontent.com/rdehuyss/homeassistant-lovelace-alarm-clock-card/master/custom_updater.json
-
 # system health enable
 system_health:
 
-
+hacs:
+  token: !secret  hacs_token
+  sidepanel_title: Community
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
@@ -59,6 +52,8 @@ updater:
   # include_used_components: true
 
 # Discover some devices automatically
+mobile_app:
+
 discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
@@ -89,6 +84,16 @@ recorder:
      domains:
       - automation
       - media_player
+
+
+influxdb:
+  host: a0d7b954-influxdb
+  port: 8086
+  database: homeassistant
+  username: !secret influxdb_user
+  password: !secret influxdb_password
+  max_retries: 3
+  default_measurement: state
 
 panel_iframe:
   router:
@@ -155,6 +160,13 @@ tts:
 
 # Cloud
 cloud:   
+  alexa:                                                                      
+    filter:                                                                   
+      include_entities:                                                       
+        - switch.wall_monitor                                                 
+        - switch.sonoff_1_relay                                               
+        - switch.living_room_ceiling_fan_relay
+        - switch.cat_light
 
 wink:
 

@@ -14,7 +14,7 @@ cards:
       - type: custom:card-modder
         card:
              type: custom:mini-media-player
-             entity: media_player.living_room_display
+             entity: media_player.nesthub4992
              name: Living Room Display
              artwork: cover
              show_source: full 
