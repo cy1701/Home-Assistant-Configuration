@@ -2,9 +2,14 @@
 id: environment
 title: Environment
 cards:
-  - type: weather-forecast
-    title: Weather
+#  - type: weather-forecast
+#    title: Weather
+#    entity: weather.dark_sky
+  - type: custom:weather-card
     entity: weather.dark_sky
+    current: true
+    details: false
+    forecast: true
 #      - type: thermostat
 #        entity: climate.thermostat
   - type: gauge

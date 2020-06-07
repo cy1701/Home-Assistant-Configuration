@@ -21,6 +21,8 @@ cards:
               - entity: binary_sensor.living_room_ss30_status
               - entity: binary_sensor.shop_receiver_status
               - entity: binary_sensor.washing_machine_status
+              - entity: binary_sensor.sonoff_2_button_status
+                name: Porch Light Status
               
             
         style:                 

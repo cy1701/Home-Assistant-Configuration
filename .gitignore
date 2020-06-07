@@ -40,3 +40,5 @@ experimental.yaml
 *.bad
 custom_components/hacs
 custom_components/__pycache__/
+custom_components/spotcast
+

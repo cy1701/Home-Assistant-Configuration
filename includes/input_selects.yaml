@@ -87,6 +87,7 @@ chromecast_radio:
     name: 'Select Speakers:'
     options:
       - Bathroom
+      - Clock
       - Bedroom
       - Kitchen
       - Livingroom

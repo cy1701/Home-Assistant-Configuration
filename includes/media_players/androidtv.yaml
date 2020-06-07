@@ -1,5 +1,5 @@
 - platform: androidtv
   host: 192.168.50.167
   name: FireTV Office
-  adb_server_ip: 127.0.0.1
-  adb_server_port: 5037
+#  adb_server_ip: 127.0.0.1
+#  adb_server_port: 5037

@@ -88,8 +88,8 @@ cards:
               tap_action:
                  action: toggle
             - entity: switch.bedroom_ss30_relay_4
-              icon: mdi:speaker
-              name: Tammy's Speaker
+              icon: mdi:fire
+              name: Flame Lamp
               tap_action:
                  action: toggle
             - entity: switch.wemo_switch_1
@@ -120,6 +120,8 @@ cards:
             - entity: binary_sensor.bedroom_sensor_occupancy
               name: Occupancy
               icon: mdi:human-handsup
+            - entity: media_player.roku
+              name: Bedroom Roku
 
         style:                 
           border-radius: 20px
@@ -149,9 +151,13 @@ cards:
                   icon: mdi:ceiling-light
                   tap_action:
                      action: toggle            
-                - entity: switch.wall_monitor
+                - entity: switch.office_wall_monitor
                   tap_action:
                      action: toggle
+                - entity: switch.jbl_speaker
+                  tap_action:
+                     action: toggle
+
                 - entity: media_player.office_speaker
                 - entity:  input_boolean.office_theater_mode
                   name: Theater Mode
@@ -242,6 +248,10 @@ cards:
                   icon: mdi:spotlight-beam
                   tap_action:
                      action: toggle
+                - entity: switch.sonoff_2_relay
+                  name: Porch Lights
+                  tap_action:
+                     action: toggle
             style:                 
               border-radius: 20px
               background-image: url("/local/backgrounds/maxresdefault.jpg")
@@ -270,5 +280,36 @@ cards:
           box-shadow: 3px 3px rgba(0,0,0,0.4)
           overflow: hidden                
 
+    - type: horizontal-stack
+      cards:                
+
+
+          - type: custom:card-modder
+            card:
+                type: glance
+                column_width: calc(100% / 3)
+                title: Basemnet
+                entities:
+                - entity: switch.gosund_4_relay
+                  name: Exhaust Fan
+                  icon: mdi:fan-minnus
+                  tap_action:
+                     action: toggle            
+                - entity: switch.gosund_3_relay
+                  name: intake Fan
+                  icon: mdi:fan-plus               
+                  tap_action:
+                     action: toggle
+                - entity: sensor.basement_tvoc
+                - entity: sensor.basement_eco2
+
+            style:                 
+              border-radius: 20px
+              background-image: url("/local/backgrounds/mediabg6.png")
+              background-size: cover
+              background-repeat: no-repeat
+              border: solid 1px rgba(100,100,100,0.3)
+              box-shadow: 3px 3px rgba(0,0,0,0.4)
+              overflow: hidden
 
    

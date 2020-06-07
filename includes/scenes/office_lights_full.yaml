@@ -3,6 +3,6 @@
     light.office_ceiling_light_1:
         state: on
         brightness: 255
-   light.office_ceiling_light_2:
-       state: on
-       brightness: 255
+    light.office_ceiling_light_2:
+        state: on
+        brightness: 255

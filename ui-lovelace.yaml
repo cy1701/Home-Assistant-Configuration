@@ -14,8 +14,6 @@ resources:
     type: js
   - url: /customcards/github/maykar/compact-custom-header.js?track=true
     type: module
-  - url: /customcards/github/maykar/compact-custom-header.js?track=true
-    type: module
   - url: /local/tracker-card.js?track=true
     type: module
   - url: https://unpkg.com/moment@2.22.2/min/moment.min.js
@@ -24,13 +22,15 @@ resources:
     type: js
   - url: https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css
     type: css
-  - url: /local/custom_ui/alarm-clock-card/alarm-clock-card.js?v=0.5.0
+  - url: /community_plugin/weather-card/weather-card.js
     type: module
   - url: /local/camera-card.js
     type: module
   - url: https://cdn.jsdelivr.net/gh/custom-cards/spotify-card@1.5/dist/spotify-card.umd.js
     type: module
-
+#  - url:  '/community_plugin//harmony-card/harmony-card.js'
+  - url:  /local/community/harmony-card/harmony-card.js
+  - type: module
 views:
 
 

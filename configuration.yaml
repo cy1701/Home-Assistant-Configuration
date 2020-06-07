@@ -110,13 +110,20 @@ panel_iframe:
     icon: mdi:backup-restore
 
 
+# Cloud
+cloud:   
+  alexa:                                                                      
+    filter:                                                                   
+      include_entities:                                                       
+        - switch.wall_monitor                                                 
+        - switch.sonoff_1_relay                                               
+        - switch.living_room_ceiling_fan_relay
+        - switch.cat_light
+
 
 hassio:
 
-simplisafe:
-  accounts:
-    - username: !secret alarm_username
-      password: !secret alarm_password
+
 
 
 ecobee:
@@ -139,10 +146,21 @@ ifttt:
   key: !secret ifttt_key
 
 
-remote:
-  - platform: harmony
-    name: Living Room 
-    host: !secret harmony_hub_ip
+simplisafe:
+  accounts:
+    - username: !secret alarm_username
+      password: !secret alarm_password
+      
+spotify:
+  client_id:  !secret spotify_clicnet_id2
+  client_secret: !secret spotify_clicnet_secret2
+
+
+# Text to speech
+tts:
+  - platform: google_translate
+    service_name: google_say
+    language: 'en-uk'
 
 wemo:
   static:
@@ -151,24 +169,9 @@ wemo:
     - !secret wemo3_ip
     - !secret wemo4_ip
     - !secret wemo5_ip
+    - !secret wemo6_ip
 
-# Text to speech
-tts:
-  - platform: google_translate
-    service_name: google_say
-    language: 'en-uk'
-
-# Cloud
-cloud:   
-  alexa:                                                                      
-    filter:                                                                   
-      include_entities:                                                       
-        - switch.wall_monitor                                                 
-        - switch.sonoff_1_relay                                               
-        - switch.living_room_ceiling_fan_relay
-        - switch.cat_light
-
-wink:
+#wink:
 
 ###############################################################
 ######  Include Files
@@ -182,9 +185,10 @@ input_select:  !include includes/input_selects.yaml
 input_number: !include includes/input_numbers.yaml
 light: !include includes/lights.yaml
 notify: !include includes/notifiers.yaml
+remote: !include includes/remote.yaml
 script: !include includes/scripts.yaml
 weather: !include includes/weather.yaml
-weblink: !include includes/weblinks.yaml
+#weblink: !include includes/weblinks.yaml
 #wink: !include includes/wink.yaml
 
 ###############################################################

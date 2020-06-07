@@ -1,5 +1,6 @@
 - platform: darksky
   api_key: !secret darksky_key
-- platform: nws
-  api_key: !secret smtp_sender
-  station: KTRI
+  mode: daily
+- platform: openweathermap
+  api_key: !secret openweathermap_key
+
